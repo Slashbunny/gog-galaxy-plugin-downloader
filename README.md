@@ -31,13 +31,16 @@ Download plugins to Galaxy's "installed" directory:
 python download.py -d %localappdata%\GOG.com\Galaxy\plugins\installed
 ```
 
-Use your own local plugins YAML file:
+# Advanced Usage
+
+By default the list of plugins comes from the YAML file in this repository. You
+can use your own local plugins YAML file like this:
 
 ```
 python download.py -d output-directory -c plugins.yaml
 ```
 
-Use your own remote plugins YAML file:
+Or use your own remote plugins YAML file hosted at any URL:
 
 ```
 python download.py -d output-directory -c https://www.mydomain.com/gog-plugins.yaml

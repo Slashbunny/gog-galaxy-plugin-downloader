@@ -32,7 +32,7 @@ plugins:
         version: '0.24.1'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v${version}/windows.zip'
     rockstar:
-        version: '0.1'
+        version: '0.2'
         url: 'https://github.com/tylerbrawl/Galaxy-Plugin-Rockstar/releases/download/v${version}/plugin.zip'
         archive_path: 'Rockstar/'
     steam:

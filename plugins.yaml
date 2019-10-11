@@ -1,5 +1,7 @@
 ---
+# Plugins from: https://github.com/Mixaill/awesome-gog-galaxy
 plugins:
+    # Friends of Galaxy
     battlenet:
         version: '0.39'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-battlenet/releases/download/v${version}/windows.zip'
@@ -9,14 +11,19 @@ plugins:
     epic:
         version: '0.42'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-epic/releases/download/v${version}/windows.zip'
-    ffxiv:
-        version: '1.1.1'
-        url: 'https://github.com/RZetko/galaxy-integration-ffxiv/releases/download/v${version}/galaxy-integration-ffxiv-${version}.zip'
-        archive_path: 'ffxiv/'
-    gw2:
-        version: '0.2.6'
-        url: 'https://github.com/Mixaill/galaxy-integration-gw2/archive/v${version}.zip'
-        archive_path: 'galaxy-integration-gw2-${version}/'
+    origin:
+        version: '0.29'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-origin/releases/download/v${version}/windows.zip'
+    psn:
+        version: '0.24.1'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v${version}/windows.zip'
+    steam:
+        version: '0.32'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v${version}/windows.zip'
+    uplay:
+        version: '0.46'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v${version}/windows.zip'
+    # Community, Stores
     humblebundle:
         version: '0.4.1'
         url: 'https://github.com/UncleGoogle/galaxy-integration-humblebundle/releases/download/v${version}/humblebundle_${version}.zip'
@@ -25,34 +32,31 @@ plugins:
         version: '0.0.2'
         url: 'https://github.com/Ertego/gog-galaxy-itch.io/releases/download/${version}/itch_0_0_2.zip'
         archive_path: 'itch/'
-    minecraft:
-        version: '178d31b'
-        url: 'https://github.com/TouwaStar/Galaxy_Plugin_Minecraft/archive/178d31bda38e9d6b490afbe0b8674864141a44c4.zip'
-        archive_path: 'Galaxy_Plugin_Minecraft-178d31bda38e9d6b490afbe0b8674864141a44c4/minecraft_windows/'
-    origin:
-        version: '0.29'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-origin/releases/download/v${version}/windows.zip'
-    poe:
-        version: '0.2'
-        url: 'https://github.com/nyash-qq/galaxy-plugin-poe/files/3555958/pathofexile_52d06761-1c23-d725-9720-57ee0b8b14bc_v0.2_win32.zip'
-    psn:
-        version: '0.24.1'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v${version}/windows.zip'
     rockstar:
         version: '0.1'
         url: 'https://github.com/tylerbrawl/Galaxy-Plugin-Rockstar/releases/download/v${version}/plugin.zip'
         archive_path: 'Rockstar/'
-    steam:
-        version: '0.32'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v${version}/windows.zip'
     twitch:
         version: '0.4'
         url: 'https://github.com/nyash-qq/galaxy-plugin-twitch/releases/download/${version}/twitch_8b831aed-dd5f-c0c5-c843-41f9751f67a2_v${version}_win32.zip'
-    uplay:
-        version: '0.46'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v${version}/windows.zip'
     wargaming:
         version: '0.7.5'
         url: 'https://github.com/Mixaill/galaxy-integration-wargaming/archive/v${version}.zip'
         archive_path: 'galaxy-integration-wargaming-${version}/'
-
+    # Community, Games
+    ffxiv:
+        version: '1.1.1'
+        url: 'https://github.com/RZetko/galaxy-integration-ffxiv/releases/download/v${version}/galaxy-integration-ffxiv-${version}.zip'
+        archive_path: 'ffxiv/'
+    gw2:
+        version: '0.2.6'
+        url: 'https://github.com/Mixaill/galaxy-integration-gw2/archive/v${version}.zip'
+        archive_path: 'galaxy-integration-gw2-${version}/'
+    minecraft:
+        version: '178d31b'
+        url: 'https://github.com/TouwaStar/Galaxy_Plugin_Minecraft/archive/178d31bda38e9d6b490afbe0b8674864141a44c4.zip'
+        archive_path: 'Galaxy_Plugin_Minecraft-178d31bda38e9d6b490afbe0b8674864141a44c4/minecraft_windows/'
+    poe:
+        version: '0.2'
+        url: 'https://github.com/nyash-qq/galaxy-plugin-poe/files/3555958/pathofexile_52d06761-1c23-d725-9720-57ee0b8b14bc_v0.2_win32.zip'
+    # Community, Emulators

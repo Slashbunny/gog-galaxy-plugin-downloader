@@ -3,6 +3,10 @@
 Downloads all GOG Galaxy 2.0 Plugins to a directory. By default, it uses the
 list of plugins from this from this repository on Github (`plugins.yaml`).
 
+The plugins are from Mixaill's excellent [Awesome GOG Galaxy](https://github.com/Mixaill/awesome-gog-galaxy)
+repository. If you'd like to see a plugin included in this program, please
+request it be added to that project _first_.
+
 # Basic Usage
 
 * Download the latest release from the [Releases](https://github.com/Slashbunny/gog-galaxy-plugin-downloader/releases) page.

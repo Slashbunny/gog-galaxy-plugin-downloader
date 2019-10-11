@@ -6,11 +6,23 @@ list of plugins from this from this repository on Github (`plugins.yaml`).
 If does not modify any directories in the destination folder. You should
 manually delete your existing/old plugins.
 
-# Requirements
+# Basic
 
-Install Python 3 on your OS. Clone or [download](https://github.com/Slashbunny/gog-galaxy-plugin-downloader/archive/master.zip)+extract this repository into a directory of your choice.
+* Download the latest release from the [Releases](Releases) page.
+* Extract the zip file anywhere on your PC.
+* Double click on `gog-plugins-downloader.exe` to run the plugin to download or
+update your plugins.
 
-# Usage
+This will only work for Windows. If you are using another OS, you will need to
+follow the Advanced instructions below.
+
+# Advanced
+
+## Requirements
+
+Install Python 3 on your OS. Clone or [download](https://github.com/Slashbunny/gog-galaxy-plugin-downloader/archive/master.zip), then extract this repository into a directory of your choice.
+
+## Usage
 
 Open a command line terminal and navigate to the directory where you downloaded
 or cloned this repository.
@@ -25,13 +37,19 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Download plugins to Galaxy's "installed" directory:
+Download plugins to Galaxy's "installed" directory on Windows (`%localappdata\GOG.com\Galaxy\plugins\installed`):
 
 ```
-python download.py -d %localappdata%\GOG.com\Galaxy\plugins\installed
+python download.py
 ```
 
-# Advanced Usage
+You can also download to a custom directory (Required on non-Windows systems):
+
+```
+python download.py -d output-folder
+```
+
+## Custom Plugins
 
 By default the list of plugins comes from the YAML file in this repository. You
 can use your own local plugins YAML file like this:
@@ -45,6 +63,25 @@ Or use your own remote plugins YAML file hosted at any URL:
 ```
 python download.py -d output-directory -c https://www.mydomain.com/gog-plugins.yaml
 ```
+
+## Building the Executable
+
+If you want to build the Windows executable, you must follow these steps on
+Windows.
+
+First, install pyinstaller:
+
+```
+pip install pyinstaller
+```
+
+Then build the executables as follows:
+
+```
+pyinstaller download.py -n gog-plugins-downloader --onefile
+```
+
+`gog-plugins-downloader.exe` will be in the `dist/` subfolder.
 
 # Contibute
 

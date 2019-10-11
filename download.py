@@ -11,6 +11,12 @@ from string import Template
 from urllib.parse import urlparse
 from urllib.request import urlopen
 
+__version__ = '0.0.2'
+
+# URL to the plugins.yaml file if one is not supplied by the user
+default_plugins = 'https://raw.githubusercontent.com/Slashbunny' \
+                  '/gog-galaxy-plugin-downloader/master/plugins.yaml'
+
 
 def get_plugin_config(config_uri):
     """
@@ -55,6 +61,11 @@ def process_template_strings(data):
 
 
 def download_plugins(data, dest):
+    """
+    Downloads and extracts plugins
+
+    If the destination directory already exists, the plugin is skipped
+    """
     for name, data in data.items():
         version = data['version']
         url = data['url']
@@ -67,11 +78,11 @@ def download_plugins(data, dest):
         dest_dir = os.path.join(dest, name + '_v' + version)
 
         if os.path.isdir(dest_dir):
-            print('NOTICE: Skipping "{}" download, {} already exists'
+            print('NOTICE: Skipping "{}" download, "{}" already exists'
                   .format(name, dest_dir))
             continue
         else:
-            print('Downloading {} version {}'.format(name, version))
+            print('Downloading "{}" version "{}"'.format(name, version))
 
         # Download zip file into memory
         plugin_url = urlopen(url)
@@ -95,6 +106,42 @@ def download_plugins(data, dest):
             tmp_dir.cleanup()
 
 
+def delete_old_plugins(data, dest):
+    """
+    Deletes versions of plugins that don't match the yaml manifest. In theory
+    this should only be older versions, but any version that doesn't match
+    the yaml definition will be deleted
+
+    This explicitly does not touch other directories that do not match the
+    known plugin names. It only deletes directories of the format:
+
+        <plugin name>_v<version>
+
+    If the version doesn't match the yaml definition, the directory is removed
+    """
+    # Loop over each plugin
+    for name, data in data.items():
+        current_plugin_dir = name + '_v' + data['version']
+
+        # Loop through directories in the destination directory
+        for item in os.listdir(dest):
+            full_path = os.path.join(dest, item)
+
+            # Skip non-directories
+            if not os.path.isdir(full_path):
+                continue
+
+            # Skip directory names that are in the valid plugin directory array
+            if item == current_plugin_dir:
+                continue
+
+            # If any other directory begins with <plugin_name>_v, delete it
+            if item.startswith(name + '_v'):
+                print('Deleting wrong version "{}" from "{}"'
+                      .format(item, dest))
+                shutil.rmtree(full_path)
+
+
 if __name__ == "__main__":
     """
     Entry point to script
@@ -102,17 +149,26 @@ if __name__ == "__main__":
     - Parses command line arguments
     - Calls function to fetch/parse plugin config yaml file
     - Calls function to download plugins
+    - Calls function to delete old/invalid plugins
     """
     # Define script arguments
     parser = argparse.ArgumentParser(
-                                 description='Download GOG Galaxy 2.0 Plugins')
-    parser.add_argument('-c', '--conf',
-                        default='https://raw.githubusercontent.com/'
-                                'Slashbunny/gog-galaxy-plugin-downloader/'
-                                'master/plugins.yaml',
+                        description='GOG Galaxy Plugin Downloader')
+    parser.add_argument('-c', '--conf', default=default_plugins,
                         help='Path or URL to plugin configuration YAML file')
-    parser.add_argument('-d', '--dest', required=True,
-                        help='Destination directory for plugins')
+
+    # On Windows, default the destination directory argument
+    if os.name == "nt":
+        plugins_dir = os.path.join(os.environ['localappdata'], 'GOG.com',
+                                   'Galaxy', 'plugins', 'installed')
+        parser.add_argument('-d', '--dest', default=plugins_dir,
+                            help='Destination directory for plugins')
+    else:
+        parser.add_argument('-d', '--dest', required=True,
+                            help='Destination directory for plugins')
+
+    parser.add_argument('--version', action='version',
+                        version='{}'.format(__version__))
 
     # Parse arguments
     args = parser.parse_args()
@@ -125,3 +181,10 @@ if __name__ == "__main__":
 
     # Download plugins
     download_plugins(plugins, args.dest)
+
+    # Delete old plugins
+    delete_old_plugins(plugins, args.dest)
+
+    # If on Windows, prompt user to press a button before exiting
+    if os.name == "nt":
+        input('Process complete! Press the Enter key to exit...')

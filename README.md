@@ -8,7 +8,7 @@ manually delete your existing/old plugins.
 
 # Basic
 
-* Download the latest release from the [Releases](Releases) page.
+* Download the latest release from the [Releases](https://github.com/Slashbunny/gog-galaxy-plugin-downloader/releases) page.
 * Extract the zip file anywhere on your PC.
 * Double click on `gog-plugins-downloader.exe` to run the plugin to download or
 update your plugins.

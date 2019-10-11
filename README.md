@@ -3,26 +3,23 @@
 Downloads all GOG Galaxy 2.0 Plugins to a directory. By default, it uses the
 list of plugins from this from this repository on Github (`plugins.yaml`).
 
-If does not modify any directories in the destination folder. You should
-manually delete your existing/old plugins.
-
-# Basic
+# Basic Usage
 
 * Download the latest release from the [Releases](https://github.com/Slashbunny/gog-galaxy-plugin-downloader/releases) page.
 * Extract the zip file anywhere on your PC.
-* Double click on `gog-plugins-downloader.exe` to run the plugin to download or
+* Double click on `gog-plugins-downloader.exe` to run the program to download or
 update your plugins.
 
 This will only work for Windows. If you are using another OS, you will need to
 follow the Advanced instructions below.
 
-# Advanced
+# Advanced Usage
 
 ## Requirements
 
 Install Python 3 on your OS. Clone or [download](https://github.com/Slashbunny/gog-galaxy-plugin-downloader/archive/master.zip), then extract this repository into a directory of your choice.
 
-## Usage
+## Running the Program
 
 Open a command line terminal and navigate to the directory where you downloaded
 or cloned this repository.
@@ -75,7 +72,7 @@ First, install pyinstaller:
 pip install pyinstaller
 ```
 
-Then build the executables as follows:
+Then build the executable as follows:
 
 ```
 pyinstaller download.py -n gog-plugins-downloader --onefile

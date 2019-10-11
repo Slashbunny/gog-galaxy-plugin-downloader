@@ -59,4 +59,9 @@ plugins:
     poe:
         version: '0.2'
         url: 'https://github.com/nyash-qq/galaxy-plugin-poe/files/3555958/pathofexile_52d06761-1c23-d725-9720-57ee0b8b14bc_v0.2_win32.zip'
+    thcrap:
+        version: '8f9896eb'
+        url: 'https://gitlab.com/PookaMustard/thcrap-plugin-for-galaxy-2.0/-/archive/8f9896eb90b0cde743851f5b7116d61138784047/thcrap-plugin-for-galaxy-2.0-8f9896eb90b0cde743851f5b7116d61138784047.zip'
+        archive_path: 'thcrap-plugin-for-galaxy-2.0-8f9896eb90b0cde743851f5b7116d61138784047/thcrap_galaxy_plugin_0.1_2/'
     # Community, Emulators
+    # TODO

@@ -13,6 +13,7 @@ request it be added to that project _first_.
 * Extract the zip file anywhere on your PC.
 * Double click on `gog-plugins-downloader.exe` to run the program to download or
 update your plugins.
+* Run regularly to keep your plugins up to date
 
 This will only work for Windows. If you are using another OS, you will need to
 follow the Advanced instructions below.

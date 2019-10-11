@@ -85,7 +85,7 @@ pyinstaller download.py -n gog-plugins-downloader --onefile
 
 `gog-plugins-downloader.exe` will be in the `dist/` subfolder.
 
-# Contibute
+# Contribute
 
 Open a Merge Request with updates to plugins in `plugins.yaml` so everyone
 can benefit

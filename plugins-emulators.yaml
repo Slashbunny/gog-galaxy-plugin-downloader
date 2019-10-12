@@ -15,11 +15,11 @@ plugins:
         url: 'https://github.com/TBemme/galaxy-integration-nds/releases/download/v${version}/galaxy-integration-nds-${version}.zip'
         archive_path: 'nds_81f936fb-39d9-48bc-b2c5-d4d45b80fbd9/'
     nes:
-        version: 'a4a0b6e7f387b9560dee93e31dfedca8291d65f0'
+        version: 'd31dadcf260fc2ccca77dfa0a9e884a0a6a8af19'
         url: 'https://github.com/AHCoder/galaxy-integration-nes/archive/${version}.zip'
         archive_path: 'galaxy-integration-nes-${version}/'
     ngameboy:
-        version: 'aad3701e9c4c11dc63771ccdd46e419c241884d8'
+        version: '4118b9d507f00e2fb463fba9d623813ecf8b958b'
         url: 'https://github.com/AHCoder/galaxy-integration-ngameboy/archive/${version}.zip'
         archive_path: 'galaxy-integration-ngameboy-${version}/'
     ncube:
@@ -35,7 +35,7 @@ plugins:
         url: 'https://github.com/LeonardFiedrowicz/galaxy-integration-cemu/releases/download/v${version}/galaxy-integration-cemu.zip'
         archive_path: 'galaxy-integration-cemu/'
     snes:
-        version: '89fb7725a0d947340500c81ff24b70d1c5078b81'
+        version: '43feb96b9b39f1e4c10a829c849f609ceb2f6aad'
         url: 'https://github.com/AHCoder/galaxy-integration-snes/archive/${version}.zip'
         archive_path: 'galaxy-integration-snes-${version}'
     psp:
@@ -43,7 +43,7 @@ plugins:
         url: 'https://github.com/TBemme/galaxy-integration-psp/releases/download/v${version}/galaxy-integration-psp-${version}.zip'
         archive_path: 'psp_cea94ced-c6cd-44cf-940c-a6c9253827a9'
     ps2:
-        version: '66a0a5433a279388c84d46717bf49ca4f09c509b'
+        version: 'f502608356afc7d20d5978dc8bc207a969098164'
         url: 'https://github.com/AHCoder/galaxy-integration-ps2/archive/${version}.zip'
         archive_path: 'galaxy-integration-ps2-${version}'
     ps3:

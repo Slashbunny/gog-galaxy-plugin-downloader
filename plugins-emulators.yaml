@@ -1,0 +1,52 @@
+---
+# Plugins from: https://github.com/Mixaill/awesome-gog-galaxy
+plugins:
+    # Community, Emulators
+    3ds:
+        version: 'b704367c56be856164f700ac5dcd25a12a0f6383'
+        url: 'https://github.com/j-selby/galaxy-integration-citra/archive/${version}.zip'
+        archive_path: 'galaxy-integration-citra-${version}/'
+    n64:
+        version: '0.2'
+        url: 'https://github.com/Riku55/galaxy-integration-n64-RetroArch-/archive/${version}.zip'
+        archive_path: 'galaxy-integration-n64-RetroArch--${version}/'
+    nds:
+        version: '0.1.0'
+        url: 'https://github.com/TBemme/galaxy-integration-nds/releases/download/v${version}/galaxy-integration-nds-${version}.zip'
+        archive_path: 'nds_81f936fb-39d9-48bc-b2c5-d4d45b80fbd9/'
+    nes:
+        version: 'a4a0b6e7f387b9560dee93e31dfedca8291d65f0'
+        url: 'https://github.com/AHCoder/galaxy-integration-nes/archive/${version}.zip'
+        archive_path: 'galaxy-integration-nes-${version}/'
+    ngameboy:
+        version: 'aad3701e9c4c11dc63771ccdd46e419c241884d8'
+        url: 'https://github.com/AHCoder/galaxy-integration-ngameboy/archive/${version}.zip'
+        archive_path: 'galaxy-integration-ngameboy-${version}/'
+    ncube:
+        version: '0.3.3'
+        url: 'https://github.com/JTNDev/galaxy-integration-gc/releases/download/v${version}/Dolphin.GameCube.Plugin.v${version}.zip'
+        archive_path: 'dolphin_gc_6804a766-c1fd-48cf-9a8b-8661a970a6cb/'
+    nwii:
+        version: '0.2.0'
+        url: 'https://github.com/JTNDev/galaxy-integration-wii/releases/download/v${version}/Dolphin.Wii.Plugin.v0.2.zip'
+        archive_path: 'dolphin_fc3e85e4-c66b-4310-96c0-8f95cc43e546/'
+    nwiiu:
+        version: '1.0'
+        url: 'https://github.com/LeonardFiedrowicz/galaxy-integration-cemu/releases/download/v${version}/galaxy-integration-cemu.zip'
+        archive_path: 'galaxy-integration-cemu/'
+    snes:
+        version: '89fb7725a0d947340500c81ff24b70d1c5078b81'
+        url: 'https://github.com/AHCoder/galaxy-integration-snes/archive/${version}.zip'
+        archive_path: 'galaxy-integration-snes-${version}'
+    psp:
+        version: '0.1.1'
+        url: 'https://github.com/TBemme/galaxy-integration-psp/releases/download/v${version}/galaxy-integration-psp-${version}.zip'
+        archive_path: 'psp_cea94ced-c6cd-44cf-940c-a6c9253827a9'
+    ps2:
+        version: '66a0a5433a279388c84d46717bf49ca4f09c509b'
+        url: 'https://github.com/AHCoder/galaxy-integration-ps2/archive/${version}.zip'
+        archive_path: 'galaxy-integration-ps2-${version}'
+    ps3:
+        version: 'e18319c503dc9a97c315375b9570821ce5636544'
+        url: 'https://github.com/mpm11011/galaxy-integration-rpcs3/archive/${version}.zip'
+        archive_path: 'galaxy-integration-rpcs3-${version}'

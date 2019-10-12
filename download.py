@@ -3,6 +3,7 @@
 import argparse
 import os
 import shutil
+import sys
 import tempfile
 import yaml
 import zipfile
@@ -11,11 +12,11 @@ from string import Template
 from urllib.parse import urlparse
 from urllib.request import urlopen
 
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
-# URL to the plugins.yaml file if one is not supplied by the user
-default_plugins = 'https://raw.githubusercontent.com/Slashbunny' \
-                  '/gog-galaxy-plugin-downloader/master/plugins.yaml'
+# Base URL to plugins
+plugin_url = 'https://raw.githubusercontent.com/Slashbunny/' \
+             'gog-galaxy-plugin-downloader/master/'
 
 
 def get_plugin_config(config_uri):
@@ -154,16 +155,31 @@ if __name__ == "__main__":
     # Define script arguments
     parser = argparse.ArgumentParser(
                         description='GOG Galaxy Plugin Downloader')
-    parser.add_argument('-c', '--conf', default=default_plugins,
-                        help='Path or URL to plugin configuration YAML file')
 
-    # On Windows, default the destination directory argument
     if os.name == "nt":
+        # Windows Defaults
+
+        # Plugin config default: Depends on which .exe is being run
+        if sys.argv[0].endswith('-emulators.exe'):
+            plugins_file = 'plugins-emulators.yaml'
+        elif sys.argv[0].endswith('-games.exe'):
+            plugins_file = 'plugins-games.yaml'
+        else:
+            plugins_file = 'plugins.yaml'
+
+        parser.add_argument('-c', '--conf', default=plugin_url + plugins_file,
+                            help='Path/URL to plugin configuration YAML file')
+
+        # Destination default: %LOCALAPPDATA%\GOG.com\Galaxy\plugins\installed\
         plugins_dir = os.path.join(os.environ['localappdata'], 'GOG.com',
                                    'Galaxy', 'plugins', 'installed')
+
         parser.add_argument('-d', '--dest', default=plugins_dir,
                             help='Destination directory for plugins')
     else:
+        # Non-Windows Defaults
+        parser.add_argument('-c', '--conf', default=plugin_url + 'plugins.yml',
+                            help='Path/URL to plugin configuration YAML file')
         parser.add_argument('-d', '--dest', required=True,
                             help='Destination directory for plugins')
 

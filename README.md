@@ -11,9 +11,11 @@ request it be added to that project _first_.
 
 * Download the latest release from the [Releases](https://github.com/Slashbunny/gog-galaxy-plugin-downloader/releases) page.
 * Extract the zip file anywhere on your PC.
-* Double click on `gog-plugins-downloader.exe` to run the program to download or
-update your plugins.
-* Run regularly to keep your plugins up to date
+* Within the zip file, there are 3 programs:
+   * `gog-plugins-downloader`: Downloads and installs plugins for game stores- Steam, Origin, Uplay, Epic, PSN, BattleNet, and more.
+   * `gog-plugins-downloader-games`: Downloads and installs plugins for single game launchers- Minecraft, Final Fantasy XIV, Path of Exile, Guild Wars 2, and more.
+   * `gog-plugins-downloader-emulators`: Downloads and installs plugins for emulators- bSNES, RetroArch, Cemu, Dolphin, Citra, mGBA, and more.
+* Run the programs of your choice regularly to keep your plugins up to date
 
 This will only work for Windows. If you are using another OS, you will need to
 follow the Advanced instructions below.
@@ -22,71 +24,92 @@ follow the Advanced instructions below.
 
 ## Requirements
 
-Install Python 3 on your OS. Clone or [download](https://github.com/Slashbunny/gog-galaxy-plugin-downloader/archive/master.zip), then extract this repository into a directory of your choice.
+Install Python 3 on your OS. Clone or [download](https://github.com/Slashbunny/gog-galaxy-plugin-downloader/archive/master.zip),
+then extract this repository into a directory of your choice.
 
 ## Running the Program
 
 Open a command line terminal and navigate to the directory where you downloaded
-or cloned this repository.
+or cloned this repository. In this example, it was extracted to a folder on the
+Desktop.
 
 ```
 cd Desktop\gog-galaxy-plugin-downloader-master
 ```
 
-Install dependencies
+Next, install python dependencies:
 
 ```
 pip install -r requirements.txt
 ```
 
-Download plugins to Galaxy's "installed" directory on Windows (`%localappdata\GOG.com\Galaxy\plugins\installed`):
+To download Store plugins to Galaxy's "installed" directory on Windows (`%localappdata\GOG.com\Galaxy\plugins\installed`):
 
 ```
 python download.py
 ```
 
-You can also download to a custom directory (Required on non-Windows systems):
+### Install Single Game Launcher Plugins
+
+```
+python download.py -c https://raw.githubusercontent.com/Slashbunny/gog-galaxy-plugin-downloader/master/plugins-games.yaml
+```
+
+or:
+
+```
+python download.py -c plugins-games.yaml
+```
+
+### Install Emulator Plugins
+
+```
+python download.py -c https://raw.githubusercontent.com/Slashbunny/gog-galaxy-plugin-downloader/master/plugins-emulators.yaml
+```
+
+or
+
+```
+python download.py -c plugins-emulators.yaml
+```
+
+## Custom Parameters
+
+### Custom Output Directory
+
+You can download to a custom directory (This is required on non-Windows systems):
 
 ```
 python download.py -d output-folder
 ```
 
-## Custom Plugins
-
-By default the list of plugins comes from the YAML file in this repository. You
-can use your own local plugins YAML file like this:
+For example, on MacOS, to install Store plugins to the default Galaxy plugins folder:
 
 ```
-python download.py -d output-directory -c plugins.yaml
+python download.py -d "${HOME}/Library/Application Support/GOG.com/Galaxy/plugins/installed/"
+```
+
+### Custom Plugins
+
+You can use your own local plugins YAML file like this:
+
+```
+python download.py -c plugins.yaml
 ```
 
 Or use your own remote plugins YAML file hosted at any URL:
 
 ```
-python download.py -d output-directory -c https://www.mydomain.com/gog-plugins.yaml
+python download.py -c https://www.mydomain.com/gog-plugins.yaml
 ```
 
-## Building the Executable
+## Building the Executables
 
-If you want to build the Windows executable, you must follow these steps on
-Windows.
-
-First, install pyinstaller:
+If you want to build the Windows executables, you can run the following batch
+files on a Windows PC:
 
 ```
-pip install pyinstaller
+build-win.bat
 ```
 
-Then build the executable as follows:
-
-```
-pyinstaller download.py -n gog-plugins-downloader --onefile
-```
-
-`gog-plugins-downloader.exe` will be in the `dist/` subfolder.
-
-# Contribute
-
-Open a Merge Request with updates to plugins in `plugins.yaml` so everyone
-can benefit
-
+The `.exe` files will be in the `dist/` subfolder.

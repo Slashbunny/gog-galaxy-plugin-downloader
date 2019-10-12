@@ -43,7 +43,7 @@ Next, install python dependencies:
 pip install -r requirements.txt
 ```
 
-To download Store plugins to Galaxy's "installed" directory on Windows (`%localappdata\GOG.com\Galaxy\plugins\installed`):
+To download Store plugins to Galaxy's "installed" directory on Windows (`%localappdata%\GOG.com\Galaxy\plugins\installed`):
 
 ```
 python download.py

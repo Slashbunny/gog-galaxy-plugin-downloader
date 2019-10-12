@@ -12,7 +12,7 @@ request it be added to that project _first_.
 * Download the latest release from the [Releases](https://github.com/Slashbunny/gog-galaxy-plugin-downloader/releases) page.
 * Extract the zip file anywhere on your PC.
 * Within the zip file, there are 3 programs:
-   * `gog-plugins-downloader`: Downloads and installs plugins for game stores- Steam, Origin, Uplay, Epic, PSN, BattleNet, and more.
+   * `gog-plugins-downloader-stores`: Downloads and installs plugins for game stores- Steam, Origin, Uplay, Epic, PSN, BattleNet, and more.
    * `gog-plugins-downloader-games`: Downloads and installs plugins for single game launchers- Minecraft, Final Fantasy XIV, Path of Exile, Guild Wars 2, and more.
    * `gog-plugins-downloader-emulators`: Downloads and installs plugins for emulators- bSNES, RetroArch, Cemu, Dolphin, Citra, mGBA, and more.
 * Run the programs of your choice regularly to keep your plugins up to date

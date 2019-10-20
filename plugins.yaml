@@ -14,6 +14,9 @@ plugins:
     origin:
         version: '0.29'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-origin/releases/download/v${version}/windows.zip'
+    paradox:
+        version: '0.1'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-paradox/releases/download/v${version}/windows.zip'
     psn:
         version: '0.24.1'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v${version}/windows.zip'
@@ -21,9 +24,13 @@ plugins:
         version: '0.32'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v${version}/windows.zip'
     uplay:
-        version: '0.47'
+        version: '0.48'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v${version}/windows.zip'
     # Community, Stores
+    discord:
+        version: '0.1'
+        url: 'https://github.com/Ertego/gog-galaxy-discord/releases/download/${version}/discord.zip'
+        archive_path: 'discord/'
     humblebundle:
         version: '0.4.1'
         url: 'https://github.com/UncleGoogle/galaxy-integration-humblebundle/releases/download/v${version}/humblebundle_${version}.zip'

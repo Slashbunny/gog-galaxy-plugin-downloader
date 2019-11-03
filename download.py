@@ -11,6 +11,7 @@ from io import BytesIO
 from string import Template
 from urllib.parse import urlparse
 from urllib.request import urlopen
+from urllib.error import URLError
 
 __version__ = '0.0.3'
 
@@ -26,12 +27,15 @@ def get_plugin_config(config_uri):
     """
     # Try to open the URI as a URL or fall back to opening local file
     try:
-        urlparse(config_uri)
-        url = urlopen(config_uri)
-        yaml_data = url.read()
-    except ValueError:
-        with open(config_uri, 'r') as file_data:
-            yaml_data = file_data.read()
+        config_uri_parsed = urlparse(config_uri)
+        if config_uri_parsed.scheme == 'https':
+            url = urlopen(config_uri)
+            yaml_data = url.read()
+        else:
+            with open(config_uri, 'r') as file_data:
+                yaml_data = file_data.read()
+    except URLError as e:
+        print(e)
 
     # Parse the YAML configuration
     try:

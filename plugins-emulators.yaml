@@ -43,7 +43,7 @@ plugins:
         url: 'https://github.com/TBemme/galaxy-integration-psp/releases/download/v${version}/galaxy-integration-psp-${version}.zip'
         archive_path: 'psp_cea94ced-c6cd-44cf-940c-a6c9253827a9'
     ps2:
-        version: 'f502608356afc7d20d5978dc8bc207a969098164'
+        version: 'f28a9555a9a50cbb998dc4eb56211557127102ec'
         url: 'https://github.com/AHCoder/galaxy-integration-ps2/archive/${version}.zip'
         archive_path: 'galaxy-integration-ps2-${version}'
     ps3:

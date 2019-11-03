@@ -28,7 +28,7 @@ def get_plugin_config(config_uri):
     # Try to open the URI as a URL or fall back to opening local file
     try:
         config_uri_parsed = urlparse(config_uri)
-        if config_uri_parsed.scheme == 'https':
+        if config_uri_parsed.scheme in ['https', 'http']:
             url = urlopen(config_uri)
             yaml_data = url.read()
         else:

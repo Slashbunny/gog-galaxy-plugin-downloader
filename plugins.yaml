@@ -3,10 +3,10 @@
 plugins:
     # Friends of Galaxy
     battlenet:
-        version: '0.40'
+        version: '0.41'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-battlenet/releases/download/v${version}/windows.zip'
     bethesda:
-        version: '0.171'
+        version: '0.173'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-bethesda/releases/download/${version}/windows.zip'
     epic:
         version: '0.43'
@@ -15,7 +15,7 @@ plugins:
         version: '0.30'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-origin/releases/download/v${version}/windows.zip'
     paradox:
-        version: '0.1'
+        version: '0.3'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-paradox/releases/download/v${version}/windows.zip'
     psn:
         version: '0.24.1'
@@ -32,9 +32,9 @@ plugins:
         url: 'https://github.com/Ertego/gog-galaxy-discord/releases/download/${version}/discord.zip'
         archive_path: 'discord/'
     humblebundle:
-        version: '0.4.1'
-        url: 'https://github.com/UncleGoogle/galaxy-integration-humblebundle/releases/download/v${version}/humblebundle_${version}.zip'
-        archive_path: 'humblebundle_${version}/'
+        version: '0.5.0'
+        url: 'https://github.com/UncleGoogle/galaxy-integration-humblebundle/releases/download/v${version}-beta/humblebundle_${version}.zip'
+        archive_path: 'humblebundle_${version}-beta/'
     itch:
         version: '0.0.2'
         url: 'https://github.com/Ertego/gog-galaxy-itch.io/releases/download/${version}/itch_0_0_2.zip'
@@ -44,9 +44,9 @@ plugins:
         url: 'https://github.com/tylerbrawl/Galaxy-Plugin-Rockstar/releases/download/v${version}/plugin.zip'
         archive_path: 'Rockstar/'
     twitch:
-        version: '0.4'
+        version: '0.5'
         url: 'https://github.com/nyash-qq/galaxy-plugin-twitch/releases/download/${version}/twitch_8b831aed-dd5f-c0c5-c843-41f9751f67a2_v${version}_win32.zip'
     wargaming:
-        version: '0.7.5'
+        version: '0.7.7'
         url: 'https://github.com/Mixaill/galaxy-integration-wargaming/archive/v${version}.zip'
         archive_path: 'galaxy-integration-wargaming-${version}/'

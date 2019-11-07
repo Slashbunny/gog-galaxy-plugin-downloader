@@ -40,7 +40,7 @@ plugins:
         url: 'https://github.com/Ertego/gog-galaxy-itch.io/releases/download/${version}/itch_0_0_2.zip'
         archive_path: 'itch/'
     rockstar:
-        version: '0.2.2'
+        version: '0.3'
         url: 'https://github.com/tylerbrawl/Galaxy-Plugin-Rockstar/releases/download/v${version}/plugin.zip'
         archive_path: 'Rockstar/'
     twitch:

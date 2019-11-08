@@ -24,7 +24,7 @@ plugins:
         version: '0.33'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v${version}/windows.zip'
     uplay:
-        version: '0.48'
+        version: '0.49'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v${version}/windows.zip'
     # Community, Stores
     discord:

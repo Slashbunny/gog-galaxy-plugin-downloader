@@ -35,7 +35,7 @@ plugins:
         url: 'https://github.com/LeonardFiedrowicz/galaxy-integration-cemu/releases/download/v${version}/galaxy-integration-cemu.zip'
         archive_path: 'galaxy-integration-cemu/'
     snes:
-        version: '43feb96b9b39f1e4c10a829c849f609ceb2f6aad'
+        version: '81603fea4d436b897d9e1162b3479ea95582dc48'
         url: 'https://github.com/AHCoder/galaxy-integration-snes/archive/${version}.zip'
         archive_path: 'galaxy-integration-snes-${version}'
     psp:
@@ -43,7 +43,7 @@ plugins:
         url: 'https://github.com/TBemme/galaxy-integration-psp/releases/download/v${version}/galaxy-integration-psp-${version}.zip'
         archive_path: 'psp_cea94ced-c6cd-44cf-940c-a6c9253827a9'
     ps2:
-        version: 'f28a9555a9a50cbb998dc4eb56211557127102ec'
+        version: 'c9c449a2e7e0bda2e42d9002f5bfc4bc9892e42e'
         url: 'https://github.com/AHCoder/galaxy-integration-ps2/archive/${version}.zip'
         archive_path: 'galaxy-integration-ps2-${version}'
     ps3:

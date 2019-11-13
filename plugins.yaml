@@ -6,7 +6,7 @@ plugins:
         version: '0.41'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-battlenet/releases/download/v${version}/windows.zip'
     bethesda:
-        version: '0.173'
+        version: '0.174'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-bethesda/releases/download/${version}/windows.zip'
     epic:
         version: '0.43'
@@ -24,7 +24,7 @@ plugins:
         version: '0.33'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v${version}/windows.zip'
     uplay:
-        version: '0.48'
+        version: '0.49'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v${version}/windows.zip'
     # Community, Stores
     discord:
@@ -32,9 +32,8 @@ plugins:
         url: 'https://github.com/Ertego/gog-galaxy-discord/releases/download/${version}/discord.zip'
         archive_path: 'discord/'
     humblebundle:
-        version: '0.5.0'
-        url: 'https://github.com/UncleGoogle/galaxy-integration-humblebundle/releases/download/v${version}-beta/humblebundle_${version}.zip'
-        archive_path: 'humblebundle_${version}-beta/'
+        version: '0.5.1'
+        url: 'https://github.com/UncleGoogle/galaxy-integration-humblebundle/releases/download/v${version}/humblebundle_${version}.zip'
     itch:
         version: '0.0.2'
         url: 'https://github.com/Ertego/gog-galaxy-itch.io/releases/download/${version}/itch_0_0_2.zip'
@@ -47,6 +46,6 @@ plugins:
         version: '0.5'
         url: 'https://github.com/nyash-qq/galaxy-plugin-twitch/releases/download/${version}/twitch_8b831aed-dd5f-c0c5-c843-41f9751f67a2_v${version}_win32.zip'
     wargaming:
-        version: '0.7.7'
+        version: '0.7.9'
         url: 'https://github.com/Mixaill/galaxy-integration-wargaming/archive/v${version}.zip'
         archive_path: 'galaxy-integration-wargaming-${version}/'

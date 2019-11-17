@@ -13,11 +13,11 @@ from urllib.parse import urlparse
 from urllib.request import urlopen
 from urllib.error import URLError
 
-__version__ = '0.0.3'
+__version__ = '0.1.0'
 
 # Base URL to plugins
-plugin_url = 'https://raw.githubusercontent.com/Slashbunny/' \
-             'gog-galaxy-plugin-downloader/master/'
+default_plugin_url = 'https://raw.githubusercontent.com/Slashbunny/' \
+             'gog-galaxy-plugin-downloader/master/plugins-all.yaml'
 
 
 def get_plugin_config(config_uri):
@@ -46,6 +46,50 @@ def get_plugin_config(config_uri):
         print(e)
 
 
+def list_plugins(plugin_data):
+    """
+    Outputs known plugins, along with whether or not they are marked as default
+    """
+    print('Available plugins:')
+
+    for name, data in plugin_data.items():
+        print(name, end='')
+
+        if 'default' in data and data['default'] is True:
+            print(' [default]')
+        else:
+            print()
+
+
+def filter_plugins(plugin_data, selected_plugins):
+    """
+    Takes the full set of plugin data and filters out only the plugins the
+    user selected.
+
+    If the user did not specify a list of plugins, it enables all the default
+    plugins
+    """
+    # No plugins selected- remove all plugins not marked as "default"
+    if selected_plugins is None:
+        for name, data in list(plugin_data.items()):
+            if 'default' not in data or data['default'] is not True:
+                del plugin_data[name]
+    # Plugin list provided at the command line
+    else:
+        selected_plugins = selected_plugins.split(',')
+        # Ensure each selected plugin actually exists to point out errors
+        for name in selected_plugins:
+            if name not in plugin_data.keys():
+                print('ERROR: Unknown plugin specified: {}'.format(name))
+                sys.exit(1)
+        # Remove any plugin not matching the providedlist
+        for name, data in list(plugin_data.items()):
+            if name not in selected_plugins:
+                del plugin_data[name]
+
+    return plugin_data
+
+
 def process_template_strings(data):
     """
     Replaces $variables in strings with corresponding variables in plugin data
@@ -55,6 +99,8 @@ def process_template_strings(data):
 
         for key, value in plugin_data.items():
             if key == 'version':
+                continue
+            if not isinstance(value, str):
                 continue
 
             # Replace references to $name and $version with the real values
@@ -153,39 +199,38 @@ if __name__ == "__main__":
 
     - Parses command line arguments
     - Calls function to fetch/parse plugin config yaml file
+    - Calls function to filter the plugin list
     - Calls function to download plugins
     - Calls function to delete old/invalid plugins
     """
-    # Define script arguments
-    parser = argparse.ArgumentParser(
-                        description='GOG Galaxy Plugin Downloader')
-
+    # OS Default Settings
     if os.name == "nt":
         # Windows Defaults
-
-        # Plugin config default: Depends on which .exe is being run
-        if sys.argv[0].endswith('-emulators.exe'):
-            plugins_file = 'plugins-emulators.yaml'
-        elif sys.argv[0].endswith('-games.exe'):
-            plugins_file = 'plugins-games.yaml'
-        else:
-            plugins_file = 'plugins.yaml'
-
-        parser.add_argument('-c', '--conf', default=plugin_url + plugins_file,
-                            help='Path/URL to plugin configuration YAML file')
+        req_dest = False
 
         # Destination default: %LOCALAPPDATA%\GOG.com\Galaxy\plugins\installed\
         plugins_dir = os.path.join(os.environ['localappdata'], 'GOG.com',
                                    'Galaxy', 'plugins', 'installed')
-
-        parser.add_argument('-d', '--dest', default=plugins_dir,
-                            help='Destination directory for plugins')
     else:
         # Non-Windows Defaults
-        parser.add_argument('-c', '--conf', default=plugin_url + 'plugins.yml',
-                            help='Path/URL to plugin configuration YAML file')
-        parser.add_argument('-d', '--dest', required=True,
-                            help='Destination directory for plugins')
+        req_dest = True
+        plugins_dir = None
+
+    # Define script arguments
+    parser = argparse.ArgumentParser(
+                        description='GOG Galaxy Plugin Downloader')
+
+    parser.add_argument('-d', '--dest', default=plugins_dir, required=req_dest,
+                        help='Destination directory for plugins')
+
+    parser.add_argument('-c', '--conf', default=default_plugin_url,
+                        help='Path/URL to plugin configuration YAML file')
+
+    parser.add_argument('-p', '--plugin-filter',
+                        help='Comma-separated list of plugins to update')
+
+    parser.add_argument('-l', '--list', action='store_true',
+                        help='Output list of available plugins')
 
     parser.add_argument('--version', action='version',
                         version='{}'.format(__version__))
@@ -195,6 +240,14 @@ if __name__ == "__main__":
 
     # Download/Load Plugin Data
     plugins = get_plugin_config(args.conf)
+
+    # List plugins and exit
+    if args.list is True:
+        list_plugins(plugins)
+        sys.exit(0)
+
+    # Filter plugin data list to selected plugins or default plugins
+    plugins = filter_plugins(plugins, args.plugin_filter)
 
     # Replace variables in templated strings
     plugins = process_template_strings(plugins)

@@ -7,22 +7,33 @@ The plugins are from Mixaill's excellent [Awesome GOG Galaxy](https://github.com
 repository. If you'd like to see a plugin included in this program, please
 request it be added to that project _first_.
 
-# Basic Usage
+# Basic Installation/Usage
+
+This section is meant for Windows users only. If you are using another OS,
+you will need to follow the Advanced instructions below.
 
 * Download the latest release from the [Releases](https://github.com/Slashbunny/gog-galaxy-plugin-downloader/releases) page.
 * Extract the zip file anywhere on your PC.
-* Within the zip file, there are 3 programs:
-   * `gog-plugins-downloader-stores`: Downloads and installs plugins for game stores- Steam, Origin, Uplay, Epic, PSN, BattleNet, and more.
-   * `gog-plugins-downloader-games`: Downloads and installs plugins for single game launchers- Minecraft, Final Fantasy XIV, Path of Exile, Guild Wars 2, and more.
-   * `gog-plugins-downloader-emulators`: Downloads and installs plugins for emulators- bSNES, RetroArch, Cemu, Dolphin, Citra, mGBA, and more.
-* Run the programs of your choice regularly to keep your plugins up to date
-
-This will only work for Windows. If you are using another OS, you will need to
-follow the Advanced instructions below.
+* Within the zip file, there is a single executable:
+   * `gog-plugins-downloader.exe`: Downloads and installs all Friends of Galaxy plugins
+   * If you want to install other plugins, you'll need to create a `.bat` file with the plugins you are interested in (see "Customizing the list..." section below)
+* Run the program regularly to keep your plugins up to date
 
 ## Install through Scoop
 
 Alternatively, on Windows, [Scoop](https://scoop.sh/) package manager can be used to install and update this tool: `scoop install gog-galaxy-plugin-downloader`.
+
+## Customizing the list of plugins being downloaded
+
+If you want to download a specific set of plugins, refer to the `gog-plugins.bat` file that comes with the
+release. Open it in Notepad. Plugins are specified via a comma-separated list, using the `-p` flag. For example:
+
+```
+gog-plugins-downloader.exe -p steam,battlenet,humblebundle,ffxiv,gw2,minecraft,poe,snes,nes
+```
+
+Change the list to whatever you require and save the `.bat` file. Double click
+on the `.bat` file to install or update the list of plugins.
 
 # Advanced Usage
 
@@ -47,34 +58,16 @@ Next, install python dependencies:
 pip install -r requirements.txt
 ```
 
-To download Store plugins to Galaxy's "installed" directory on Windows (`%localappdata%\GOG.com\Galaxy\plugins\installed`):
+To download default plugins to Galaxy's "installed" directory on Windows (`%localappdata%\GOG.com\Galaxy\plugins\installed`):
 
 ```
 python download.py
 ```
 
-### Install Single Game Launcher Plugins
+### List Available Plugins
 
 ```
-python download.py -c https://raw.githubusercontent.com/Slashbunny/gog-galaxy-plugin-downloader/master/plugins-games.yaml
-```
-
-or:
-
-```
-python download.py -c plugins-games.yaml
-```
-
-### Install Emulator Plugins
-
-```
-python download.py -c https://raw.githubusercontent.com/Slashbunny/gog-galaxy-plugin-downloader/master/plugins-emulators.yaml
-```
-
-or
-
-```
-python download.py -c plugins-emulators.yaml
+python download.py -l
 ```
 
 ## Custom Parameters
@@ -93,7 +86,7 @@ For example, on MacOS, to install Store plugins to the default Galaxy plugins fo
 python download.py -d "${HOME}/Library/Application Support/GOG.com/Galaxy/plugins/installed/"
 ```
 
-### Custom Plugins
+### Custom Plugin Lists
 
 You can use your own local plugins YAML file like this:
 
@@ -107,9 +100,18 @@ Or use your own remote plugins YAML file hosted at any URL:
 python download.py -c https://www.mydomain.com/gog-plugins.yaml
 ```
 
-## Building the Executables
+### Filtering Plugins
 
-If you want to build the Windows executables, you can run the following batch
+Rather than install all the plugins referenced in a `yaml` file, you can filter
+the list using the `-p` option:
+
+```
+python download.py -p battlenet,steam,rockstar,humblebundle
+```
+
+## Building the Executable
+
+If you want to build the Windows executable, you can run the following batch
 files on a Windows PC:
 
 ```

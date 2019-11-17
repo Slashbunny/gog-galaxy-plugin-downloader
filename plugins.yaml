@@ -11,6 +11,9 @@ plugins:
     epic:
         version: '0.43'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-epic/releases/download/v${version}/windows.zip'
+    humblebundle:
+        version: '0.5.1'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/${version}/windows.zip'
     origin:
         version: '0.30'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-origin/releases/download/v${version}/windows.zip'
@@ -20,6 +23,9 @@ plugins:
     psn:
         version: '0.24.1'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v${version}/windows.zip'
+    rockstar:
+        version: '0.3.3'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/${version}/windows.zip'
     steam:
         version: '0.33'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v${version}/windows.zip'
@@ -31,17 +37,10 @@ plugins:
         version: '0.1'
         url: 'https://github.com/Ertego/gog-galaxy-discord/releases/download/${version}/discord.zip'
         archive_path: 'discord/'
-    humblebundle:
-        version: '0.5.1'
-        url: 'https://github.com/UncleGoogle/galaxy-integration-humblebundle/releases/download/v${version}/humblebundle_${version}.zip'
     itch:
         version: '0.0.2'
         url: 'https://github.com/Ertego/gog-galaxy-itch.io/releases/download/${version}/itch_0_0_2.zip'
         archive_path: 'itch/'
-    rockstar:
-        version: '0.3.3'
-        url: 'https://github.com/tylerbrawl/Galaxy-Plugin-Rockstar/releases/download/v${version}/plugin.zip'
-        archive_path: 'Rockstar/'
     twitch:
         version: '0.5'
         url: 'https://github.com/nyash-qq/galaxy-plugin-twitch/releases/download/${version}/twitch_8b831aed-dd5f-c0c5-c843-41f9751f67a2_v${version}_win32.zip'

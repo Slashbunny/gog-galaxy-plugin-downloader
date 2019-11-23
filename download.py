@@ -171,12 +171,24 @@ def download_plugins(data, dest):
         dest_dir = os.path.join(dest, name + '_' + guid)
 
         if os.path.isdir(dest_dir):
-            print('NOTICE: Skipping "{}" download, "{}" already exists'
-                  .format(name, dest_dir))
-            continue
-        else:
-            print('Downloading "{}" version "{}" ({})'
-                  .format(name, version, guid))
+            # If destination path exists, check the version that is installed
+            with open(os.path.join(dest_dir, 'manifest.json')) as m:
+                data = json.load(m)
+                existing_version = data['version']
+
+                # Version already matches
+                if version == existing_version:
+                    print('NOTICE: Skipping "{}" download, "{}" already exists'
+                          .format(name, version))
+                    continue
+                # Version does not match, delete old plugin and download
+                else:
+                    shutil.rmtree(dest_dir)
+                    print('Upgrading {} plugin'.format(name))
+
+        # Passed Pre-Download Checks
+        print('Downloading "{}" version "{}" ({})'
+              .format(name, version, guid))
 
         # Download zip file into memory
         plugin_url = urlopen(url)
@@ -207,9 +219,7 @@ def delete_old_plugins(data, dest):
     the yaml definition will be deleted
 
     This explicitly does not touch other directories that do not match the
-    known plugin names. It only deletes directories of the format:
-
-        <plugin name>_v<version>
+    known plugin names.
 
     If the version doesn't match the yaml definition, the directory is removed
     """

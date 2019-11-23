@@ -68,13 +68,13 @@ plugins:
         guid: '8b831aed-dd5f-c0c5-c843-41f9751f67a2'
         url: 'https://github.com/nyash-qq/galaxy-plugin-twitch/releases/download/${version}/twitch_8b831aed-dd5f-c0c5-c843-41f9751f67a2_v${version}_win32.zip'
     wargaming:
-        version: '0.7.9'
+        version: '0.8.1'
         guid: '91728e8a-33c3-4b6d-8382-4dd31043dec1'
         url: 'https://github.com/Mixaill/galaxy-integration-wargaming/archive/v${version}.zip'
         archive_path: 'galaxy-integration-wargaming-${version}/'
     # Community, Games
     ffxiv:
-        version: '1.1.1'
+        version: '1.1.2'
         guid: '0a9eb0eb-812a-45a1-bc40-c1cd82195313'
         url: 'https://github.com/RZetko/galaxy-integration-ffxiv/releases/download/v${version}/galaxy-integration-ffxiv-${version}.zip'
         archive_path: 'ffxiv/'
@@ -89,9 +89,9 @@ plugins:
         url: 'https://github.com/TouwaStar/Galaxy_Plugin_Minecraft/archive/178d31bda38e9d6b490afbe0b8674864141a44c4.zip'
         archive_path: 'Galaxy_Plugin_Minecraft-178d31bda38e9d6b490afbe0b8674864141a44c4/minecraft_windows/'
     pathofexile:
-        version: '0.2'
+        version: '0.3'
         guid: '52d06761-1c23-d725-9720-57ee0b8b14bc'
-        url: 'https://github.com/nyash-qq/galaxy-plugin-poe/files/3555958/pathofexile_52d06761-1c23-d725-9720-57ee0b8b14bc_v0.2_win32.zip'
+        url: 'https://github.com/nyash-qq/galaxy-plugin-poe/releases/download/0.3/pathofexile_${guid}_v${version}_win32.zip'
     test:
         # thcrap Plugin (Patching Touhou Project Games)
         version: '0.1'

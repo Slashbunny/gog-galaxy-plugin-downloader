@@ -5,125 +5,158 @@ plugins:
     battlenet:
         default: true
         version: '0.41'
+        guid: 'ba170431-0649-482f-863b-d248592f1842'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-battlenet/releases/download/v${version}/windows.zip'
     bethesda:
         default: true
         version: '0.174'
+        guid: 'cb57391f-1675-35b1-05c0-896d43bdf4f8'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-bethesda/releases/download/${version}/windows.zip'
     epic:
         default: true
         version: '0.43'
+        guid: '24d5f405-7211-4198-83c4-50a6f63b1dcf'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-epic/releases/download/v${version}/windows.zip'
-    humblebundle:
+    humble:
         default: true
         version: '0.5.1'
+        guid: 'f0ca3d80-a432-4d35-a9e3-60f27161ac3a'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/${version}/windows.zip'
     origin:
         default: true
         version: '0.31'
+        guid: '7f53219b-4e2b-4591-9f4f-dfc5f4ba9eb0'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-origin/releases/download/v${version}/windows.zip'
     paradox:
         default: true
         version: '0.3'
+        guid: 'bfa5a6c9-r0c3-5g28-b921-f4cd75d4999a'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-paradox/releases/download/v${version}/windows.zip'
     psn:
         default: true
+        guid: '38087aea-3c30-439f-867d-ddf9fae8fe6f'
         version: '0.24.1'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v${version}/windows.zip'
     rockstar:
         default: true
         version: '0.3.3'
+        guid: '774732b5-69c4-405c-b6c9-92cd55740cfe'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/${version}/windows.zip'
     steam:
         default: true
         version: '0.33.3'
+        guid: 'ca27391f-2675-49b1-92c0-896d43afa4f8'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v${version}/windows.zip'
     uplay:
         default: true
         version: '0.50'
+        guid: 'afb5a69c-b2ee-4d58-b916-f4cd75d4999a'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v${version}/windows.zip'
     # Community, Stores
     discord:
         version: '0.1'
+        guid: 'ce69028e-a7e4-462a-96d8-468259c298e2'
         url: 'https://github.com/Ertego/gog-galaxy-discord/releases/download/${version}/discord.zip'
         archive_path: 'discord/'
     itch:
         version: '0.0.2'
+        guid: 'fd0effe6-77d9-42bc-999d-a5a5c870c2a4'
         url: 'https://github.com/Ertego/gog-galaxy-itch.io/releases/download/${version}/itch_0_0_2.zip'
         archive_path: 'itch/'
     twitch:
         version: '0.5'
+        guid: '8b831aed-dd5f-c0c5-c843-41f9751f67a2'
         url: 'https://github.com/nyash-qq/galaxy-plugin-twitch/releases/download/${version}/twitch_8b831aed-dd5f-c0c5-c843-41f9751f67a2_v${version}_win32.zip'
     wargaming:
         version: '0.7.9'
+        guid: '91728e8a-33c3-4b6d-8382-4dd31043dec1'
         url: 'https://github.com/Mixaill/galaxy-integration-wargaming/archive/v${version}.zip'
         archive_path: 'galaxy-integration-wargaming-${version}/'
     # Community, Games
     ffxiv:
         version: '1.1.1'
+        guid: '0a9eb0eb-812a-45a1-bc40-c1cd82195313'
         url: 'https://github.com/RZetko/galaxy-integration-ffxiv/releases/download/v${version}/galaxy-integration-ffxiv-${version}.zip'
         archive_path: 'ffxiv/'
     gw2:
         version: '0.3.0'
+        guid: '637b1fd4-b1d0-4de8-9bf6-757e639807f3'
         url: 'https://github.com/Mixaill/galaxy-integration-gw2/archive/v${version}.zip'
         archive_path: 'galaxy-integration-gw2-${version}/'
     minecraft:
         version: '178d31bda38e9d6b490afbe0b8674864141a44c4'
+        guid: 'cb57391f-1675-35b1-05c0-896d43bdf8f4'
         url: 'https://github.com/TouwaStar/Galaxy_Plugin_Minecraft/archive/${version}.zip'
         archive_path: 'Galaxy_Plugin_Minecraft-${version}/minecraft_windows/'
-    poe:
+    pathofexile:
         version: '0.2'
+        guid: '52d06761-1c23-d725-9720-57ee0b8b14bc'
         url: 'https://github.com/nyash-qq/galaxy-plugin-poe/files/3555958/pathofexile_52d06761-1c23-d725-9720-57ee0b8b14bc_v0.2_win32.zip'
-    thcrap:
+    test:
+        # thcrap Plugin (Patching Touhou Project Games)
         version: '8f9896eb90b0cde743851f5b7116d61138784047'
+        guid: '8f44cd59-ca9a-4f0b-8f90-11cb3f39d265'
         url: 'https://gitlab.com/PookaMustard/thcrap-plugin-for-galaxy-2.0/-/archive/${version}/thcrap-plugin-for-galaxy-2.0-${version}.zip'
         archive_path: 'thcrap-plugin-for-galaxy-2.0-${version}/thcrap_galaxy_plugin_0.1_2/'
     # Community, Emulators
     3ds:
         version: 'b704367c56be856164f700ac5dcd25a12a0f6383'
+        guid: 'c6596e5a-5f3a-4681-942a-746433f255ff'
         url: 'https://github.com/j-selby/galaxy-integration-citra/archive/${version}.zip'
         archive_path: 'galaxy-integration-citra-${version}/'
     n64:
         version: '0.2'
+        guid: 'a3824d31-c2d3-4a1a-b321-7d0764da5513'
         url: 'https://github.com/Riku55/galaxy-integration-n64-RetroArch-/archive/${version}.zip'
         archive_path: 'galaxy-integration-n64-RetroArch--${version}/'
     nds:
         version: '0.1.0'
+        guid: '81f936fb-39d9-48bc-b2c5-d4d45b80fbd9'
         url: 'https://github.com/TBemme/galaxy-integration-nds/releases/download/v${version}/galaxy-integration-nds-${version}.zip'
         archive_path: 'nds_81f936fb-39d9-48bc-b2c5-d4d45b80fbd9/'
     nes:
         version: 'd31dadcf260fc2ccca77dfa0a9e884a0a6a8af19'
+        guid: '454d829d-2367-4414-b33d-1e5c138eebdf'
         url: 'https://github.com/AHCoder/galaxy-integration-nes/archive/${version}.zip'
         archive_path: 'galaxy-integration-nes-${version}/'
     ngameboy:
         version: '4118b9d507f00e2fb463fba9d623813ecf8b958b'
+        guid: '3765ba17-db55-460e-8f5c-f7e19cc5bb79'
         url: 'https://github.com/AHCoder/galaxy-integration-ngameboy/archive/${version}.zip'
         archive_path: 'galaxy-integration-ngameboy-${version}/'
     ncube:
         version: '0.3.4'
+        guid: '6804a766-c1fd-48cf-9a8b-8661a970a6cb'
         url: 'https://github.com/JTNDev/galaxy-integration-gc/releases/download/v${version}/Dolphin-GCN-Retroarch-v${version}.zip'
         archive_path: 'dolphin_gc_6804a766-c1fd-48cf-9a8b-8661a970a6cb/'
     nwii:
         version: '0.3.4'
+        guid: 'fc3e85e4-c66b-4310-96c0-8f95cc43e546'
         url: 'https://github.com/JTNDev/galaxy-integration-wii/releases/download/v${version}/Dolphin-Wii-Galaxy-2.0-Plugin-v${version}.zip'
         archive_path: 'dolphin_fc3e85e4-c66b-4310-96c0-8f95cc43e546/'
     nwiiu:
         version: '1.0'
+        guid: '1023214b-fd5d-45fd-9671-c080e92b03bb'
         url: 'https://github.com/LeonardFiedrowicz/galaxy-integration-cemu/releases/download/v${version}/galaxy-integration-cemu.zip'
         archive_path: 'galaxy-integration-cemu/'
     snes:
         version: '81603fea4d436b897d9e1162b3479ea95582dc48'
+        guid: 'aa7db44d-b70b-4774-91da-db1034318d3c'
         url: 'https://github.com/AHCoder/galaxy-integration-snes/archive/${version}.zip'
         archive_path: 'galaxy-integration-snes-${version}'
     psp:
         version: '0.1.1'
+        guid: 'cea94ced-c6cd-44cf-940c-a6c9253827a9'
         url: 'https://github.com/TBemme/galaxy-integration-psp/releases/download/v${version}/galaxy-integration-psp-${version}.zip'
         archive_path: 'psp_cea94ced-c6cd-44cf-940c-a6c9253827a9'
     ps2:
         version: 'c9c449a2e7e0bda2e42d9002f5bfc4bc9892e42e'
+        guid: '1e814707-1fe3-4e1e-86fe-1b8d1b7fac2e'
         url: 'https://github.com/AHCoder/galaxy-integration-ps2/archive/${version}.zip'
         archive_path: 'galaxy-integration-ps2-${version}'
-    ps3:
+    vision:
+        # RPCS3 Plugin (Playstation 3)
         version: 'e18319c503dc9a97c315375b9570821ce5636544'
+        guid: '80F9D16B-5D72-4B95-9D46-2A1EF417C1FC'
         url: 'https://github.com/mpm11011/galaxy-integration-rpcs3/archive/${version}.zip'
         archive_path: 'galaxy-integration-rpcs3-${version}'

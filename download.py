@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import argparse
+import json
 import os
 import shutil
 import sys
@@ -96,6 +97,7 @@ def process_template_strings(data):
     """
     for plugin_name, plugin_data in data.items():
         version = plugin_data['version']
+        guid = plugin_data['guid']
 
         for key, value in plugin_data.items():
             if key == 'version':
@@ -106,9 +108,48 @@ def process_template_strings(data):
             # Replace references to $name and $version with the real values
             data[plugin_name][key] = Template(value).substitute(
                                         name=plugin_name,
-                                        version=version)
+                                        version=version,
+                                        guid=guid)
 
     return data
+
+
+def fix_plugin_directories(dest):
+    """
+    Loops through all folders in the output directory, reads the their manifest
+    file, and renames the directory to the standard <platform>_<guid> format
+    """
+    # Loop through directories in the destination directory
+    for existing_dir in os.listdir(dest):
+        existing_path = os.path.join(dest, existing_dir)
+
+        # Skip non-directories
+        if not os.path.isdir(existing_path):
+            continue
+
+        try:
+            with open(os.path.join(existing_path, 'manifest.json')) as m:
+                data = json.load(m)
+                platform = data['platform']
+                guid = data['guid']
+
+                expected_dir = platform + '_' + guid
+                expected_path = os.path.join(dest, expected_dir)
+
+                if existing_path != expected_path:
+                    print('NOTICE: Folder should be "{}", but it is named "{}"'
+                          .format(expected_dir, existing_dir))
+
+                    if os.path.isdir(expected_path):
+                        print('NOTICE: Correct pathed plugin already exists,'
+                              + ' deleting extra plugin')
+                        shutil.rmtree(existing_path)
+                    else:
+                        print('NOTICE: Renaming folder to proper name')
+                        shutil.move(existing_path, expected_path)
+        except (FileNotFoundError, json.decoder.JSONDecodeError, KeyError):
+            print('ERROR: Could not read plugin data from {} folder'
+                  .format(existing_path))
 
 
 def download_plugins(data, dest):
@@ -119,6 +160,7 @@ def download_plugins(data, dest):
     """
     for name, data in data.items():
         version = data['version']
+        guid = data['guid']
         url = data['url']
         if 'archive_path' in data:
             archive_path = data['archive_path']
@@ -126,14 +168,15 @@ def download_plugins(data, dest):
             archive_path = None
 
         # Destination directory
-        dest_dir = os.path.join(dest, name + '_v' + version)
+        dest_dir = os.path.join(dest, name + '_' + guid)
 
         if os.path.isdir(dest_dir):
             print('NOTICE: Skipping "{}" download, "{}" already exists'
                   .format(name, dest_dir))
             continue
         else:
-            print('Downloading "{}" version "{}"'.format(name, version))
+            print('Downloading "{}" version "{}" ({})'
+                  .format(name, version, guid))
 
         # Download zip file into memory
         plugin_url = urlopen(url)
@@ -172,7 +215,7 @@ def delete_old_plugins(data, dest):
     """
     # Loop over each plugin
     for name, data in data.items():
-        current_plugin_dir = name + '_v' + data['version']
+        expected_plugin_dir = name + '_' + data['guid']
 
         # Loop through directories in the destination directory
         for item in os.listdir(dest):
@@ -183,11 +226,11 @@ def delete_old_plugins(data, dest):
                 continue
 
             # Skip directory names that are in the valid plugin directory array
-            if item == current_plugin_dir:
+            if item == expected_plugin_dir:
                 continue
 
-            # If any other directory begins with <plugin_name>_v, delete it
-            if item.startswith(name + '_v'):
+            # If any other directory begins with <plugin_name>_, delete it
+            if item.startswith(name + '_'):
                 print('Deleting wrong version "{}" from "{}"'
                       .format(item, dest))
                 shutil.rmtree(full_path)
@@ -251,6 +294,9 @@ if __name__ == "__main__":
 
     # Replace variables in templated strings
     plugins = process_template_strings(plugins)
+
+    # Fix existing plugin directories
+    fix_plugin_directories(args.dest)
 
     # Download plugins
     download_plugins(plugins, args.dest)

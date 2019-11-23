@@ -18,7 +18,7 @@ __version__ = '0.1.0'
 
 # Base URL to plugins
 default_plugin_url = 'https://raw.githubusercontent.com/Slashbunny/' \
-             'gog-galaxy-plugin-downloader/master/plugins-all.yaml'
+             'gog-galaxy-plugin-downloader/master/plugins.yaml'
 
 
 def get_plugin_config(config_uri):

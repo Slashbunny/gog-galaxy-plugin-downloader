@@ -17,7 +17,7 @@ The plugins are from Mixaill's excellent [Awesome GOG Galaxy](https://github.com
 repository. If you'd like to see a plugin included in this program, please
 request it be added to that project _first_.
 
-# Basic Installation/Usage
+# Usage
 
 This section is meant for Windows users only. If you are using another OS,
 you will need to follow the Advanced instructions below.

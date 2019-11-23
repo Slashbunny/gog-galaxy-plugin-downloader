@@ -1,16 +1,17 @@
 # GOG Galaxy Plugins Downloader
 
-## WARNING
+## Summary
 
-You _probably_ do not want to use this software.
+This program downloads GOG Galaxy 2.0 Plugins and installs them to the proper location.
+
+You _probably_ do not want to use this software anymore.
 
 As of the Galaxy 2.0 Euporie update, released November 19th, 2019, the GOG Galaxy
 client automatically downloads and updates plugins from within the Integrations
 screens. You should install plugins using GOG Galaxy itself, not this software.
 
-## Summary
-
-This program downloads all GOG Galaxy 2.0 Plugins to a directory.
+However, not all plugins are available from the GOG Galaxy interface. If you are
+interested in those other plugins, this program may be beneficial to you.
 
 The plugins are from Mixaill's excellent [Awesome GOG Galaxy](https://github.com/Mixaill/awesome-gog-galaxy)
 repository. If you'd like to see a plugin included in this program, please

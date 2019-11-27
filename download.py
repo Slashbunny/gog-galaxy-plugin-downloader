@@ -133,6 +133,9 @@ def fix_plugin_directories(dest):
                 platform = data['platform']
                 guid = data['guid']
 
+                # Close json file
+                m.close()
+
                 expected_dir = platform + '_' + guid
                 expected_path = os.path.join(dest, expected_dir)
 
@@ -175,6 +178,9 @@ def download_plugins(data, dest):
             with open(os.path.join(dest_dir, 'manifest.json')) as m:
                 data = json.load(m)
                 existing_version = data['version']
+
+                # Close json file
+                m.close()
 
                 # Version already matches
                 if version == existing_version:

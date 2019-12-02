@@ -19,17 +19,17 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-epic/releases/download/v${version}/windows.zip'
     humble:
         default: true
-        version: '0.5.1'
+        version: '0.5.3'
         guid: 'f0ca3d80-a432-4d35-a9e3-60f27161ac3a'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/${version}/windows.zip'
     origin:
         default: true
-        version: '0.31'
+        version: '0.32'
         guid: '7f53219b-4e2b-4591-9f4f-dfc5f4ba9eb0'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-origin/releases/download/v${version}/windows.zip'
     paradox:
         default: true
-        version: '0.3'
+        version: '0.4'
         guid: 'bfa5a6c9-r0c3-5g28-b921-f4cd75d4999a'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-paradox/releases/download/v${version}/windows.zip'
     psn:
@@ -39,7 +39,7 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v${version}/windows.zip'
     rockstar:
         default: true
-        version: '0.3.4'
+        version: '0.3.6'
         guid: '774732b5-69c4-405c-b6c9-92cd55740cfe'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/${version}/windows.zip'
     steam:

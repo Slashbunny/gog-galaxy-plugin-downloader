@@ -34,7 +34,7 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-paradox/releases/download/v${version}/windows.zip'
     psn:
         default: true
-        version: '0.24.1'
+        version: '0.26'
         guid: '38087aea-3c30-439f-867d-ddf9fae8fe6f'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v${version}/windows.zip'
     rockstar:
@@ -44,7 +44,7 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/${version}/windows.zip'
     steam:
         default: true
-        version: '0.33.4'
+        version: '0.38.2'
         guid: 'ca27391f-2675-49b1-92c0-896d43afa4f8'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v${version}/windows.zip'
     uplay:
@@ -68,7 +68,7 @@ plugins:
         guid: '8b831aed-dd5f-c0c5-c843-41f9751f67a2'
         url: 'https://github.com/nyash-qq/galaxy-plugin-twitch/releases/download/${version}/twitch_8b831aed-dd5f-c0c5-c843-41f9751f67a2_v${version}_win32.zip'
     wargaming:
-        version: '0.8.1'
+        version: '0.8.2'
         guid: '91728e8a-33c3-4b6d-8382-4dd31043dec1'
         url: 'https://github.com/Mixaill/galaxy-integration-wargaming/archive/v${version}.zip'
         archive_path: 'galaxy-integration-wargaming-${version}/'
@@ -89,9 +89,9 @@ plugins:
         url: 'https://github.com/TouwaStar/Galaxy_Plugin_Minecraft/archive/178d31bda38e9d6b490afbe0b8674864141a44c4.zip'
         archive_path: 'Galaxy_Plugin_Minecraft-178d31bda38e9d6b490afbe0b8674864141a44c4/minecraft_windows/'
     pathofexile:
-        version: '0.3'
+        version: '0.4'
         guid: '52d06761-1c23-d725-9720-57ee0b8b14bc'
-        url: 'https://github.com/nyash-qq/galaxy-plugin-poe/releases/download/0.3/pathofexile_${guid}_v${version}_win32.zip'
+        url: 'https://github.com/nyash-qq/galaxy-plugin-poe/files/3927530/pathofexile_${guid}_v${version}_win32.zip'
     test:
         # thcrap Plugin (Patching Touhou Project Games)
         version: '0.1'
@@ -140,20 +140,20 @@ plugins:
         url: 'https://github.com/LeonardFiedrowicz/galaxy-integration-cemu/releases/download/v1.0/galaxy-integration-cemu.zip'
         archive_path: 'galaxy-integration-cemu/'
     snes:
-        version: '0.2.0'
+        version: '0.2.1'
         guid: 'aa7db44d-b70b-4774-91da-db1034318d3c'
-        url: 'https://github.com/AHCoder/galaxy-integration-snes/archive/81603fea4d436b897d9e1162b3479ea95582dc48.zip'
-        archive_path: 'galaxy-integration-snes-81603fea4d436b897d9e1162b3479ea95582dc48'
+        url: 'https://github.com/AHCoder/galaxy-integration-snes/archive/013be51e7265081bed1b14690a63cd367300cd17.zip'
+        archive_path: 'galaxy-integration-snes-013be51e7265081bed1b14690a63cd367300cd17'
     psp:
         version: '0.1.1'
         guid: 'cea94ced-c6cd-44cf-940c-a6c9253827a9'
         url: 'https://github.com/TBemme/galaxy-integration-psp/releases/download/v${version}/galaxy-integration-psp-${version}.zip'
         archive_path: 'psp_cea94ced-c6cd-44cf-940c-a6c9253827a9'
     ps2:
-        version: '0.7.3'
+        version: '0.7.5'
         guid: '1e814707-1fe3-4e1e-86fe-1b8d1b7fac2e'
-        url: 'https://github.com/AHCoder/galaxy-integration-ps2/archive/c9c449a2e7e0bda2e42d9002f5bfc4bc9892e42e.zip'
-        archive_path: 'galaxy-integration-ps2-c9c449a2e7e0bda2e42d9002f5bfc4bc9892e42e'
+        url: 'https://github.com/AHCoder/galaxy-integration-ps2/archive/0ecc1924f3e8de5c5a8a26a1c3310b19e9997d7a.zip'
+        archive_path: 'galaxy-integration-ps2-0ecc1924f3e8de5c5a8a26a1c3310b19e9997d7a'
     vision:
         # RPCS3 Plugin (Playstation 3)
         version: '0.63'

@@ -31,7 +31,12 @@ you will need to follow the Advanced instructions below.
 
 ## Install through Scoop
 
-Alternatively, on Windows, [Scoop](https://scoop.sh/) package manager can be used to install and update this tool: `scoop install gog-galaxy-plugin-downloader`.
+Alternatively, on Windows, [Scoop](https://scoop.sh/) package manager can be used to install and update this tool:
+
+```
+scoop bucket add extras
+scoop install gog-galaxy-plugin-downloader
+```
 
 ## Customizing the list of plugins being downloaded
 

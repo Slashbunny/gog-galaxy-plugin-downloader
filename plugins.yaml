@@ -1,7 +1,7 @@
 ---
 # Plugins from: https://github.com/Mixaill/awesome-gog-galaxy
 plugins:
-    # Friends of Galaxy
+    # Community, Stores
     battlenet:
         default: true
         version: '0.43'
@@ -9,9 +9,14 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-battlenet/releases/download/v${version}/windows.zip'
     bethesda:
         default: true
-        version: '0.177'
+        version: '0.183'
         guid: 'cb57391f-1675-35b1-05c0-896d43bdf4f8'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-bethesda/releases/download/${version}/windows.zip'
+    discord:
+        version: '0.1.1'
+        guid: 'ce69028e-a7e4-462a-96d8-468259c298e2'
+        url: 'https://github.com/Ertego/gog-galaxy-discord/archive/8e568f94a419011076d22f723dffdbac8145c3fb.zip'
+        archive_path: 'gog-galaxy-discord-8e568f94a419011076d22f723dffdbac8145c3fb/'
     epic:
         default: true
         version: '0.45'
@@ -19,9 +24,14 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-epic/releases/download/v${version}/windows.zip'
     humble:
         default: true
-        version: '0.5.3'
+        version: '0.5.4'
         guid: 'f0ca3d80-a432-4d35-a9e3-60f27161ac3a'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/${version}/windows.zip'
+    itch:
+        version: '0.1'
+        guid: 'fd0effe6-77d9-42bc-999d-a5a5c870c2a4'
+        url: 'https://github.com/Ertego/gog-galaxy-itch.io/releases/download/0.0.2/itch_0_0_2.zip'
+        archive_path: 'itch/'
     origin:
         default: true
         version: '0.32'
@@ -34,7 +44,7 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-paradox/releases/download/v${version}/windows.zip'
     psn:
         default: true
-        version: '0.26'
+        version: '0.27'
         guid: '38087aea-3c30-439f-867d-ddf9fae8fe6f'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v${version}/windows.zip'
     rockstar:
@@ -44,33 +54,22 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/${version}/windows.zip'
     steam:
         default: true
-        version: '0.38.2'
+        version: '0.40'
         guid: 'ca27391f-2675-49b1-92c0-896d43afa4f8'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v${version}/windows.zip'
+    twitch:
+        version: '0.5'
+        guid: '8b831aed-dd5f-c0c5-c843-41f9751f67a2'
+        url: 'https://github.com/nyash-qq/galaxy-plugin-twitch/releases/download/${version}/twitch_8b831aed-dd5f-c0c5-c843-41f9751f67a2_v${version}_win32.zip'
     uplay:
         default: true
         version: '0.51'
         guid: 'afb5a69c-b2ee-4d58-b916-f4cd75d4999a'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v${version}/windows.zip'
-    # Community, Stores
-    discord:
-        version: '0.1'
-        guid: 'ce69028e-a7e4-462a-96d8-468259c298e2'
-        url: 'https://github.com/Ertego/gog-galaxy-discord/releases/download/${version}/discord.zip'
-        archive_path: 'discord/'
-    itch:
-        version: '0.1'
-        guid: 'fd0effe6-77d9-42bc-999d-a5a5c870c2a4'
-        url: 'https://github.com/Ertego/gog-galaxy-itch.io/releases/download/0.0.2/itch_0_0_2.zip'
-        archive_path: 'itch/'
-    twitch:
-        version: '0.5'
-        guid: '8b831aed-dd5f-c0c5-c843-41f9751f67a2'
-        url: 'https://github.com/nyash-qq/galaxy-plugin-twitch/releases/download/${version}/twitch_8b831aed-dd5f-c0c5-c843-41f9751f67a2_v${version}_win32.zip'
     wargaming:
         version: '0.8.2'
         guid: '91728e8a-33c3-4b6d-8382-4dd31043dec1'
-        url: 'https://github.com/Mixaill/galaxy-integration-wargaming/archive/v${version}.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/${version}/windows.zip'
         archive_path: 'galaxy-integration-wargaming-${version}/'
     # Community, Games
     ffxiv:

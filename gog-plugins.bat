@@ -1,1 +1,1 @@
-gog-plugins-downloader.exe -p battlenet,twitch
+gog-plugins-downloader.exe -p ffxiv,twitch

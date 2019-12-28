@@ -70,7 +70,6 @@ plugins:
         version: '0.8.2'
         guid: '91728e8a-33c3-4b6d-8382-4dd31043dec1'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.8.2/windows.zip'
-        archive_path: 'galaxy-integration-wargaming-${version}/'
     # Community, Games
     ffxiv:
         version: '1.1.2'
@@ -82,7 +81,6 @@ plugins:
         version: '0.3.0'
         guid: '637b1fd4-b1d0-4de8-9bf6-757e639807f3'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-gw2/releases/download/0.3.0/windows.zip'
-        archive_path: 'galaxy-integration-gw2-${version}/'
     minecraft:
         default: true
         version: '0.6'

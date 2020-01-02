@@ -48,9 +48,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v0.27/windows.zip'
     rockstar:
         default: true
-        version: '0.4'
+        version: '0.4.1'
         guid: '774732b5-69c4-405c-b6c9-92cd55740cfe'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/0.4/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/0.4.1/windows.zip'
     steam:
         default: true
         version: '0.43.1'
@@ -67,9 +67,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v0.51/windows.zip'
     wargaming:
         default: true
-        version: '0.8.2'
+        version: '0.8.3'
         guid: '91728e8a-33c3-4b6d-8382-4dd31043dec1'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.8.2/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.8.3/windows.zip'
     # Community, Games
     ffxiv:
         version: '1.1.2'

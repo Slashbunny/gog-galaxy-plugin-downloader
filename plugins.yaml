@@ -128,6 +128,11 @@ plugins:
         guid: '6804a766-c1fd-48cf-9a8b-8661a970a6cb'
         url: 'https://github.com/JTNDev/galaxy-integration-gc/releases/download/v${version}/Dolphin-GCN-Retroarch-v${version}.zip'
         archive_path: 'dolphin_gc_6804a766-c1fd-48cf-9a8b-8661a970a6cb/'
+    nswitch:
+        version: '0.1'
+        guid: 'b627be67-44e5-40f5-a482-6e52bf967ea1'
+        url: 'https://github.com/LeonardFiedrowicz/galaxy-integration-yuzu/releases/download/v1.0/galaxy-integration-yuzu.zip'
+        archive_path: 'galaxy-integration-yuzu/'
     nwii:
         version: '0.4.2'
         guid: 'fc3e85e4-c66b-4310-96c0-8f95cc43e546'

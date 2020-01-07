@@ -3,9 +3,9 @@ plugins:
     # Community, Stores
     battlenet:
         default: true
-        version: '1.0'
+        version: '1.0.2'
         guid: 'ba170431-0649-482f-863b-d248592f1842'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-blizzard/releases/download/1.0/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-blizzard/releases/download/1.0.2/windows.zip'
     bethesda:
         default: true
         version: '0.183'

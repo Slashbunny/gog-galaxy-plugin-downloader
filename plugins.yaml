@@ -141,7 +141,7 @@ plugins:
     nwiiu:
         version: '0.1'
         guid: '1023214b-fd5d-45fd-9671-c080e92b03bb'
-        url: 'https://github.com/LeonardFiedrowicz/galaxy-integration-cemu/releases/download/v1.1/galaxy-integration-cemu.zip'
+        url: 'https://github.com/LeonardFiedrowicz/galaxy-integration-cemu/releases/download/v1.2/galaxy-integration-cemu.zip'
         archive_path: 'galaxy-integration-cemu/'
     snes:
         version: '0.2.1'

@@ -23,9 +23,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-epic/releases/download/v0.47/windows.zip'
     humble:
         default: true
-        version: '0.5.4'
+        version: '0.6.0'
         guid: 'f0ca3d80-a432-4d35-a9e3-60f27161ac3a'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/0.5.4/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/0.6.0/windows.zip'
     itch:
         version: '0.1'
         guid: 'fd0effe6-77d9-42bc-999d-a5a5c870c2a4'

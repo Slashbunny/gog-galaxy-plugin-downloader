@@ -72,7 +72,7 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.8.3/windows.zip'
     # Community, Games
     ffxiv:
-        version: '1.2.0'
+        version: '1.2.1'
         guid: '0a9eb0eb-812a-45a1-bc40-c1cd82195313'
         url: 'https://github.com/RZetko/galaxy-integration-ffxiv/releases/download/v${version}/galaxy-integration-ffxiv-${version}.zip'
         archive_path: 'ffxiv/'

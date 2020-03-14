@@ -104,10 +104,11 @@ plugins:
         url: 'https://github.com/j-selby/galaxy-integration-citra/archive/b704367c56be856164f700ac5dcd25a12a0f6383.zip'
         archive_path: 'galaxy-integration-citra-b704367c56be856164f700ac5dcd25a12a0f6383/'
     n64:
+        # RetroGOG (RetroArch)
         version: '0.2'
         guid: 'a3824d31-c2d3-4a1a-b321-7d0764da5513'
-        url: 'https://github.com/Riku55/galaxy-integration-n64-RetroArch-/archive/${version}.zip'
-        archive_path: 'galaxy-integration-n64-RetroArch--${version}/'
+        url: 'https://github.com/jshackles/RetroGOG/archive/${version}.zip'
+        archive_path: 'RetroGOG-${version}/'
     nds:
         version: '0.1.0'
         guid: '81f936fb-39d9-48bc-b2c5-d4d45b80fbd9'

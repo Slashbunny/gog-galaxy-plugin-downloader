@@ -135,11 +135,10 @@ plugins:
         url: 'https://github.com/LeonardFiedrowicz/galaxy-integration-yuzu/releases/download/v1.0/galaxy-integration-yuzu.zip'
         archive_path: 'galaxy-integration-yuzu/'
     nwii:
-        # Version 0.5.0 is distributed as a 7zip archive, which will not be supported
-        version: '0.4.2'
+        version: '0.5.0'
         guid: 'fc3e85e4-c66b-4310-96c0-8f95cc43e546'
-        url: 'https://github.com/JTNDev/galaxy-integration-wii/releases/download/v${version}/galaxy-integration-wii.zip'
-        archive_path: 'galaxy-integration-wii/'
+        url: 'https://github.com/JTNDev/galaxy-integration-wii/releases/download/v${version}/galaxy-integration-wii-v5.0.zip'
+        archive_path: 'galaxy-integration-wii-v5.0/'
     nwiiu:
         version: '0.1'
         guid: '1023214b-fd5d-45fd-9671-c080e92b03bb'

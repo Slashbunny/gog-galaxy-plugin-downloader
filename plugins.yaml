@@ -62,9 +62,9 @@ plugins:
         url: 'https://github.com/nyash-qq/galaxy-plugin-twitch/releases/download/${version}/twitch_8b831aed-dd5f-c0c5-c843-41f9751f67a2_v${version}_win32.zip'
     uplay:
         default: true
-        version: '0.52'
+        version: '0.53'
         guid: 'afb5a69c-b2ee-4d58-b916-f4cd75d4999a'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v0.52/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v0.53/windows.zip'
     wargaming:
         default: true
         version: '0.8.4'

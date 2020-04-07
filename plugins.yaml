@@ -23,9 +23,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-epic/releases/download/v0.48.1/windows.zip'
     humble:
         default: true
-        version: '0.6.1'
+        version: '0.7.1'
         guid: 'f0ca3d80-a432-4d35-a9e3-60f27161ac3a'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/0.6.1/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/0.7.1/windows.zip'
     itch:
         version: '0.1'
         guid: 'fd0effe6-77d9-42bc-999d-a5a5c870c2a4'
@@ -43,9 +43,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-paradox/releases/download/v0.5/windows.zip'
     psn:
         default: true
-        version: '0.27'
+        version: '0.28'
         guid: '38087aea-3c30-439f-867d-ddf9fae8fe6f'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v0.27/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v0.28/windows.zip'
     rockstar:
         default: true
         version: '0.5.3'
@@ -53,9 +53,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/0.5.3/windows.zip'
     steam:
         default: true
-        version: '0.49'
+        version: '0.50'
         guid: 'ca27391f-2675-49b1-92c0-896d43afa4f8'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v0.49/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v0.50/windows.zip'
     twitch:
         version: '0.5'
         guid: '8b831aed-dd5f-c0c5-c843-41f9751f67a2'

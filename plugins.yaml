@@ -48,9 +48,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v0.28/windows.zip'
     rockstar:
         default: true
-        version: '0.5.3'
+        version: '0.5.4'
         guid: '774732b5-69c4-405c-b6c9-92cd55740cfe'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/0.5.3/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/0.5.4/windows.zip'
     steam:
         default: true
         version: '0.50.1'

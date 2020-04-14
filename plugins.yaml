@@ -8,9 +8,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-blizzard/releases/download/1.1.0/windows.zip'
     bethesda:
         default: true
-        version: '0.183'
+        version: '0.184'
         guid: 'cb57391f-1675-35b1-05c0-896d43bdf4f8'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-bethesda/releases/download/0.183/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-bethesda/releases/download/0.184/windows.zip'
     discord:
         version: '0.1.1'
         guid: 'ce69028e-a7e4-462a-96d8-468259c298e2'

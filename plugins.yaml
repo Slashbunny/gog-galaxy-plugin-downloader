@@ -38,9 +38,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-origin/releases/download/v0.35/windows.zip'
     paradox:
         default: true
-        version: '0.5'
+        version: '0.6.1'
         guid: 'bfa5a6c9-r0c3-5g28-b921-f4cd75d4999a'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-paradox/releases/download/v0.5/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-paradox/releases/download/v0.6.1/windows.zip'
     psn:
         default: true
         version: '0.28'

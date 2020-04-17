@@ -67,9 +67,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v0.53/windows.zip'
     wargaming:
         default: true
-        version: '0.8.4'
+        version: '0.8.5'
         guid: '91728e8a-33c3-4b6d-8382-4dd31043dec1'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.8.4/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.8.5/windows.zip'
     # Community, Games
     ffxiv:
         version: '1.2.1'

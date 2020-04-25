@@ -11,7 +11,7 @@ import zipfile
 from io import BytesIO
 from string import Template
 from urllib.parse import urlparse
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 from urllib.error import URLError
 
 __version__ = '0.1.0'
@@ -197,7 +197,9 @@ def download_plugins(data, dest):
               .format(name, version, guid))
 
         # Download zip file into memory
-        plugin_url = urlopen(url)
+        req = Request(url)
+        req.add_header('user-agent', 'gog-plugin-downloader/' + __version__)
+        plugin_url = urlopen(req)
         plugin_zip = zipfile.ZipFile(BytesIO(plugin_url.read()))
 
         # Extract zip directly into destination if there are no sub-folders

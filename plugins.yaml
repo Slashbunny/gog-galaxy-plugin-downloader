@@ -75,6 +75,11 @@ plugins:
         guid: '91728e8a-33c3-4b6d-8382-4dd31043dec1'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.8.5/windows.zip'
     # Community, Games
+    egg:
+        # Osu! Plugin
+        version: '1.0.0'
+        guid: '79764115-b455-4ff0-be13-a316c7c53dec'
+        url: 'https://github.com/UncleGoogle/galaxy-integration-osu/releases/download/v${version}/osu_${version}.zip'
     ffxiv:
         version: '1.2.1'
         guid: '0a9eb0eb-812a-45a1-bc40-c1cd82195313'

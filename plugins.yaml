@@ -103,6 +103,11 @@ plugins:
         guid: 'c6596e5a-5f3a-4681-942a-746433f255ff'
         url: 'https://github.com/j-selby/galaxy-integration-citra/archive/b704367c56be856164f700ac5dcd25a12a0f6383.zip'
         archive_path: 'galaxy-integration-citra-b704367c56be856164f700ac5dcd25a12a0f6383/'
+    amiga:
+        # ScummVM Plugin
+        version: '0.2'
+        guid: 'ceb4409d-84be-4e93-84f3-a5a300f0a95c'
+        url: 'https://github.com/micpp42/gog-galaxy-scummvm/releases/download/v${version}/scummvm.zip'
     jaguar:
         # DOSBox Plugin
         version: '0.1'

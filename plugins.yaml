@@ -31,9 +31,9 @@ plugins:
         guid: 'a1a85742-f3e0-42ae-bde9-64ab7d0321cf'
         url: 'https://github.com/burnhamup/galaxy-integration-indiegala/releases/download/v${version}/indiegala_v${version}.zip'
     itch:
-        version: '0.1'
+        version: '0.3'
         guid: 'fd0effe6-77d9-42bc-999d-a5a5c870c2a4'
-        url: 'https://github.com/Ertego/gog-galaxy-itch.io/releases/download/0.0.2/itch_0_0_2.zip'
+        url: 'https://github.com/Ertego/gog-galaxy-itch.io/releases/download/0.0.3R/itch_0_0_3R.zip'
         archive_path: 'itch/'
     origin:
         default: true

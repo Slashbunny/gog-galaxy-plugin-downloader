@@ -27,7 +27,7 @@ plugins:
         guid: 'f0ca3d80-a432-4d35-a9e3-60f27161ac3a'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/0.7.1/windows.zip'
     indiegala:
-        version: '0.0.7'
+        version: '0.0.8'
         guid: 'a1a85742-f3e0-42ae-bde9-64ab7d0321cf'
         url: 'https://github.com/burnhamup/galaxy-integration-indiegala/releases/download/${version}/indiegala_v${version}.zip'
     itch:

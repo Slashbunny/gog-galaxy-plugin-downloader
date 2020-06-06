@@ -105,3 +105,6 @@ venv.bak/
 
 # Testing output directory
 output/
+
+# Test script to download all plugins
+download-all.sh

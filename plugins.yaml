@@ -3,9 +3,9 @@ plugins:
     # Community, Stores
     battlenet:
         default: true
-        version: '1.1.0'
+        version: '1.3.0'
         guid: 'ba170431-0649-482f-863b-d248592f1842'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-blizzard/releases/download/1.1.0/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-blizzard/releases/download/1.3.0/windows.zip'
     bethesda:
         default: true
         version: '0.184'
@@ -23,9 +23,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-epic/releases/download/v0.48.3/windows.zip'
     humble:
         default: true
-        version: '0.7.1'
+        version: '0.8.0'
         guid: 'f0ca3d80-a432-4d35-a9e3-60f27161ac3a'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/0.7.1/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/0.8.0/windows.zip'
     indiegala:
         version: '0.0.8'
         guid: 'a1a85742-f3e0-42ae-bde9-64ab7d0321cf'
@@ -57,18 +57,18 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/0.5.4/windows.zip'
     steam:
         default: true
-        version: '0.51.1'
+        version: '0.51.2'
         guid: 'ca27391f-2675-49b1-92c0-896d43afa4f8'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v0.51.1/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v0.51.2/windows.zip'
     twitch:
         version: '0.5'
         guid: '8b831aed-dd5f-c0c5-c843-41f9751f67a2'
         url: 'https://github.com/nyash-qq/galaxy-plugin-twitch/releases/download/${version}/twitch_8b831aed-dd5f-c0c5-c843-41f9751f67a2_v${version}_win32.zip'
     uplay:
         default: true
-        version: '0.54'
+        version: '0.55.1'
         guid: 'afb5a69c-b2ee-4d58-b916-f4cd75d4999a'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v0.54/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v0.55.1/windows.zip'
     wargaming:
         default: true
         version: '0.8.6'

@@ -8,9 +8,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-blizzard/releases/download/1.3.0/windows.zip'
     bethesda:
         default: true
-        version: '0.184'
+        version: '1.0.1'
         guid: 'cb57391f-1675-35b1-05c0-896d43bdf4f8'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-bethesda/releases/download/0.184/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-bethesda/releases/download/1.0.1/windows.zip'
     discord:
         version: '0.1.1'
         guid: 'ce69028e-a7e4-462a-96d8-468259c298e2'
@@ -18,9 +18,9 @@ plugins:
         archive_path: 'gog-galaxy-discord-8e568f94a419011076d22f723dffdbac8145c3fb/'
     epic:
         default: true
-        version: '0.48.3'
+        version: '0.49.0'
         guid: '24d5f405-7211-4198-83c4-50a6f63b1dcf'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-epic/releases/download/v0.48.3/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-epic/releases/download/v0.49.0/windows.zip'
     humble:
         default: true
         version: '0.8.0'
@@ -92,9 +92,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-gw2/releases/download/0.3.0/windows.zip'
     minecraft:
         default: true
-        version: '0.8'
+        version: '0.8.3'
         guid: 'cb57391f-1675-35b1-05c0-896d43bdf8f4'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-minecraft/releases/download/0.8/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-minecraft/releases/download/0.8.3/windows.zip'
     pathofexile:
         default: true
         version: '0.4'

@@ -1,6 +1,10 @@
 # Plugins from: https://github.com/Mixaill/awesome-gog-galaxy
 plugins:
     # Community, Stores
+    amazon:
+        version: '0.1.1'
+        guid: 'c2cd2e29-8b02-35a9-86fc-3faf90255857'
+        url: 'https://github.com/Rall3n/galaxy-integration-amazon/releases/download/v${version}/windows.zip'
     battlenet:
         default: true
         version: '1.3.0'

@@ -27,9 +27,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-epic/releases/download/v0.49.1/windows.zip'
     humble:
         default: true
-        version: '0.8.0'
+        version: '0.8.1'
         guid: 'f0ca3d80-a432-4d35-a9e3-60f27161ac3a'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/0.8.0/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/0.8.1/windows.zip'
     indiegala:
         version: '0.0.8'
         guid: 'a1a85742-f3e0-42ae-bde9-64ab7d0321cf'
@@ -80,9 +80,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v0.55.1/windows.zip'
     wargaming:
         default: true
-        version: '0.8.6'
+        version: '0.9.1'
         guid: '91728e8a-33c3-4b6d-8382-4dd31043dec1'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.8.6/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.9.1/windows.zip'
     # Community, Games
     egg:
         # Osu! Plugin

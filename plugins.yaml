@@ -41,9 +41,9 @@ plugins:
         archive_path: 'itch/'
     origin:
         default: true
-        version: '0.36'
+        version: '0.37'
         guid: '7f53219b-4e2b-4591-9f4f-dfc5f4ba9eb0'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-origin/releases/download/v0.36/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-origin/releases/download/v0.37/windows.zip'
     paradox:
         default: true
         version: '0.6.2'

@@ -99,9 +99,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-gw2/releases/download/0.4.1/windows.zip'
     minecraft:
         default: true
-        version: '0.8.3'
+        version: '1.0.3'
         guid: 'cb57391f-1675-35b1-05c0-896d43bdf8f4'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-minecraft/releases/download/0.8.3/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-minecraft/releases/download/1.0.3/windows.zip'
     pathofexile:
         default: true
         version: '0.4'

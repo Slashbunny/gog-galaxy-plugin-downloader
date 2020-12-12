@@ -60,9 +60,9 @@ plugins:
         url: 'https://github.com/urwrstkn8mare/galaxy-riot-integration/releases/download/v${version}/windows-v${version}-galaxy-riot-integration.zip'
     rockstar:
         default: true
-        version: '0.5.6'
+        version: '0.5.9'
         guid: '774732b5-69c4-405c-b6c9-92cd55740cfe'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/0.5.6/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/0.5.9/windows.zip'
     steam:
         default: true
         version: '0.53'

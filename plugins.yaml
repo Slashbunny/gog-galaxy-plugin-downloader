@@ -94,9 +94,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-ffxiv/releases/download/1.2.2/windows.zip'
     gw2:
         default: true
-        version: '0.5.1'
+        version: '0.5.2'
         guid: '637b1fd4-b1d0-4de8-9bf6-757e639807f3'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-gw2/releases/download/0.5.1/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-gw2/releases/download/0.5.2/windows.zip'
     minecraft:
         default: true
         version: '1.0.3'

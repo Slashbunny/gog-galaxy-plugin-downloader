@@ -186,10 +186,10 @@ plugins:
         url: 'https://github.com/TBemme/galaxy-integration-psp/releases/download/v${version}/galaxy-integration-psp-${version}.zip'
         archive_path: 'psp_cea94ced-c6cd-44cf-940c-a6c9253827a9'
     ps2:
-        version: '0.8.0'
+        version: '0.8.1'
         guid: '1e814707-1fe3-4e1e-86fe-1b8d1b7fac2e'
-        url: 'https://github.com/AHCoder/galaxy-integration-ps2/archive/ae1e9ed8c6e686f9480432f56f16c5fef913088a.zip'
-        archive_path: 'galaxy-integration-ps2-ae1e9ed8c6e686f9480432f56f16c5fef913088a'
+        url: 'https://github.com/AHCoder/galaxy-integration-ps2/archive/04b50a0bc2c5170c37b50c74fea30f3ea2f87707.zip'
+        archive_path: 'galaxy-integration-ps2-04b50a0bc2c5170c37b50c74fea30f3ea2f87707'
     vision:
         # RPCS3 Plugin (Playstation 3)
         version: '0.63'

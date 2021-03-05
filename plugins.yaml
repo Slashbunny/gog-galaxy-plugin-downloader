@@ -69,9 +69,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/0.5.12/windows.zip'
     steam:
         default: true
-        version: '0.55'
+        version: '0.56'
         guid: 'ca27391f-2675-49b1-92c0-896d43afa4f8'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v0.55/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-steam/releases/download/v0.56/windows.zip'
     twitch:
         version: '0.5'
         guid: '8b831aed-dd5f-c0c5-c843-41f9751f67a2'

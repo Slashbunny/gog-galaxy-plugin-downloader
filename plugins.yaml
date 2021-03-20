@@ -120,10 +120,10 @@ plugins:
         archive_path: 'thcrap-plugin-for-galaxy-2.0-master/thcrap_galaxy_plugin_0.1_2/'
     # Community, Emulators
     3ds:
-        version: '0.1'
+        version: '0.3'
         guid: 'c6596e5a-5f3a-4681-942a-746433f255ff'
-        url: 'https://github.com/j-selby/galaxy-integration-citra/archive/b704367c56be856164f700ac5dcd25a12a0f6383.zip'
-        archive_path: 'galaxy-integration-citra-b704367c56be856164f700ac5dcd25a12a0f6383/'
+        url: 'https://github.com/LeonardFiedrowicz/galaxy-integration-citra/archive/bac4637f426a3aa48bd8e51338ac219925629b60.zip'
+        archive_path: 'galaxy-integration-citra-bac4637f426a3aa48bd8e51338ac219925629b60'
     amiga:
         # ScummVM Plugin
         version: '0.2'

@@ -83,9 +83,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v0.55.2/windows.zip'
     wargaming:
         default: true
-        version: '0.9.5'
+        version: '0.9.6'
         guid: '91728e8a-33c3-4b6d-8382-4dd31043dec1'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.9.5/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.9.6/windows.zip'
     # Community, Games
     egg:
         # Osu! Plugin

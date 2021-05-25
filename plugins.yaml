@@ -7,9 +7,9 @@ plugins:
         url: 'https://github.com/Rall3n/galaxy-integration-amazon/releases/download/v${version}/windows.zip'
     battlenet:
         default: true
-        version: '1.3.4'
+        version: '1.4.0'
         guid: 'ba170431-0649-482f-863b-d248592f1842'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-blizzard/releases/download/1.3.4/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-blizzard/releases/download/1.4.0/windows.zip'
     bethesda:
         default: true
         version: '1.0.1'

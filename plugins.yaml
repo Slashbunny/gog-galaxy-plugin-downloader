@@ -55,9 +55,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-paradox/releases/download/v0.6.2/windows.zip'
     psn:
         default: true
-        version: '0.32'
+        version: '0.33'
         guid: '38087aea-3c30-439f-867d-ddf9fae8fe6f'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v0.32/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v0.33/windows.zip'
     riot:
         version: '0.2.4'
         guid: 'b4c0c2f5-23dc-4326-aa65-e9fabef61a3b'

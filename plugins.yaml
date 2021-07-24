@@ -59,9 +59,9 @@ plugins:
         guid: '38087aea-3c30-439f-867d-ddf9fae8fe6f'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-psn/releases/download/v0.33/windows.zip'
     riot:
-        version: '0.2.4'
+        version: '0.2.5'
         guid: 'b4c0c2f5-23dc-4326-aa65-e9fabef61a3b'
-        url: 'https://github.com/urwrstkn8mare/galaxy-riot-integration/releases/download/v${version}/windows-v${version}-galaxy-riot-integration.zip'
+        url: 'https://github.com/urwrstkn8mare/galaxy-riot-integration/releases/download/v${version}/riot_v${version}.zip'
     rockstar:
         default: true
         version: '0.5.13'

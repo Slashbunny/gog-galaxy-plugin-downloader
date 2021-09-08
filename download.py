@@ -321,7 +321,3 @@ if __name__ == "__main__":
 
     # Delete old plugins
     delete_old_plugins(plugins, args.dest)
-
-    # If on Windows, prompt user to press a button before exiting
-    if os.name == "nt":
-        input('Process complete! Press the Enter key to exit...')

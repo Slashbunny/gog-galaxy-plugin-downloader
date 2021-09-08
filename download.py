@@ -14,7 +14,7 @@ from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 from urllib.error import URLError
 
-__version__ = '0.1.0'
+__version__ = '0.2.3'
 
 # Base URL to plugins
 default_plugin_url = 'https://raw.githubusercontent.com/Slashbunny/' \

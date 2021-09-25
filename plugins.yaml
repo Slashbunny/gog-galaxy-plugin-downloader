@@ -7,9 +7,9 @@ plugins:
         url: 'https://github.com/Rall3n/galaxy-integration-amazon/releases/download/v${version}/windows.zip'
     battlenet:
         default: true
-        version: '1.4.1'
+        version: '1.4.2'
         guid: 'ba170431-0649-482f-863b-d248592f1842'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-blizzard/releases/download/1.4.1/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-blizzard/releases/download/1.4.2/windows.zip'
     bethesda:
         default: true
         version: '1.0.2'
@@ -83,9 +83,9 @@ plugins:
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/releases/download/v0.55.4/windows.zip'
     wargaming:
         default: true
-        version: '0.9.6'
+        version: '0.9.7'
         guid: '91728e8a-33c3-4b6d-8382-4dd31043dec1'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.9.6/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-wargaming/releases/download/0.9.7/windows.zip'
     # Community, Games
     egg:
         # Osu! Plugin

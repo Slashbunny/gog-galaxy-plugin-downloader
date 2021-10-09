@@ -31,9 +31,9 @@ plugins:
         url: 'https://github.com/nosyn00b/GOG2_Fanatical_Plugin/releases/download/v${version}/fanatical_v${version}.zip'
     humble:
         default: true
-        version: '0.9.4'
+        version: '0.9.5'
         guid: 'f0ca3d80-a432-4d35-a9e3-60f27161ac3a'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/0.9.4/windows.zip'
+        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/0.9.5/windows.zip'
     indiegala:
         version: '0.1.0'
         guid: 'a1a85742-f3e0-42ae-bde9-64ab7d0321cf'

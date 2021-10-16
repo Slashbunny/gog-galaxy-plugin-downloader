@@ -146,15 +146,15 @@ plugins:
         url: 'https://github.com/TBemme/galaxy-integration-nds/releases/download/v${version}/galaxy-integration-nds-${version}.zip'
         archive_path: 'nds_81f936fb-39d9-48bc-b2c5-d4d45b80fbd9/'
     nes:
-        version: '0.2.0'
-        guid: '454d829d-2367-4414-b33d-1e5c138eebdf'
-        url: 'https://github.com/AHCoder/galaxy-integration-nes/archive/d31dadcf260fc2ccca77dfa0a9e884a0a6a8af19.zip'
-        archive_path: 'galaxy-integration-nes-d31dadcf260fc2ccca77dfa0a9e884a0a6a8af19/'
-    ngameboy:
         version: '0.3.0'
+        guid: '454d829d-2367-4414-b33d-1e5c138eebdf'
+        url: 'https://github.com/AHCoder/galaxy-integration-nes/archive/ecb4e4667ff8451a206e23ae80f2f07e57eb4a16.zip'
+        archive_path: 'galaxy-integration-nes-ecb4e4667ff8451a206e23ae80f2f07e57eb4a16/src/'
+    ngameboy:
+        version: '0.3.1'
         guid: '3765ba17-db55-460e-8f5c-f7e19cc5bb79'
-        url: 'https://github.com/AHCoder/galaxy-integration-ngameboy/archive/cfa798accff92875a5a35ef824872b9ce7e23b01.zip'
-        archive_path: 'galaxy-integration-ngameboy-cfa798accff92875a5a35ef824872b9ce7e23b01/src/'
+        url: 'https://github.com/AHCoder/galaxy-integration-ngameboy/archive/9ac755f41ebac1d3b6eee91a3f0d69e8bf4b5a39.zip'
+        archive_path: 'galaxy-integration-ngameboy-9ac755f41ebac1d3b6eee91a3f0d69e8bf4b5a39/src/'
     ncube:
         version: '0.3.4'
         guid: '6804a766-c1fd-48cf-9a8b-8661a970a6cb'

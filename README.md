@@ -47,7 +47,7 @@ release. Open it in Notepad. Plugins are specified via a comma-separated list, u
 gog-plugins-downloader.exe -p steam,battlenet,humblebundle,ffxiv,gw2,minecraft,poe,snes,nes
 ```
 
-For a full list of available plugin names, view the `plugins.yaml` file in this repository.
+For a full list of available plugin names, view the [plugins.yaml](https://github.com/Slashbunny/gog-galaxy-plugin-downloader/blob/master/plugins.yaml) file in this repository.
 Change the list in the `.bat` file to include the plugins you want to install or update.
 Save the `.bat` file. Double click on the `.bat` file to install or update your plugins.
 

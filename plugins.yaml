@@ -90,9 +90,9 @@ plugins:
     # Community, Games
     egg:
         # Osu! Plugin
-        version: '1.0.1'
+        version: '1.1.1'
         guid: '79764115-b455-4ff0-be13-a316c7c53dec'
-        url: 'https://github.com/UncleGoogle/galaxy-integration-osu/releases/download/v${version}/osu_${version}.zip'
+        url: 'https://github.com/UncleGoogle/galaxy-integration-osu/releases/download/v${version}/osu_v${version}_win.zip'
     ffxiv:
         default: true
         version: '1.2.2'

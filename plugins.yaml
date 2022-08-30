@@ -32,9 +32,9 @@ plugins:
         archive_path: 'GOG2_Fanatical_Plugin-7e5989e633fed91e4ca6b5029c8c6873b05bb8b7/src/'
     humble:
         default: true
-        version: '0.9.5'
+        version: '0.11.0'
         guid: 'f0ca3d80-a432-4d35-a9e3-60f27161ac3a'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-humble/releases/download/0.9.5/windows.zip'
+        url: 'https://github.com/UncleGoogle/galaxy-integration-humblebundle/releases/download/v0.11.0/humble_v0.11.0_win.zip'
     indiegala:
         version: '0.1.0'
         guid: 'a1a85742-f3e0-42ae-bde9-64ab7d0321cf'

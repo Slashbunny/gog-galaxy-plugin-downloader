@@ -65,9 +65,10 @@ plugins:
         url: 'https://github.com/urwrstkn8mare/galaxy-riot-integration/releases/download/v${version}/riot_v${version}.zip'
     rockstar:
         default: true
-        version: '0.5.13'
+        version: '0.5.15'
         guid: '774732b5-69c4-405c-b6c9-92cd55740cfe'
-        url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-rockstar/releases/download/0.5.13/windows.zip'
+        url: 'https://github.com/tylerbrawl/Galaxy-Plugin-Rockstar/releases/download/v${version}/plugin.zip'
+        archive_path: 'Rockstar/'
     steam:
         default: true
         version: '1.0.2'

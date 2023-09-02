@@ -104,6 +104,11 @@ plugins:
         version: '0.5.2'
         guid: '637b1fd4-b1d0-4de8-9bf6-757e639807f3'
         url: 'https://github.com/FriendsOfGalaxy/galaxy-integration-gw2/releases/download/0.5.2/windows.zip'
+    kartridge:
+        version: '0.3.3'
+        guid: '73d2c048-1ae7-46b2-ad4a-da16yc8ccecz'
+        url: 'https://github.com/pippo-san/galaxy-integration-legacy-games/releases/download/v${version}/legacygames.zip'
+        archive_path: 'legacygames/'
     minecraft:
         default: true
         version: '1.0.3'

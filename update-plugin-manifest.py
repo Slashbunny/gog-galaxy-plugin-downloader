@@ -5,7 +5,7 @@ import json
 import ruamel.yaml
 from urllib.request import urlopen
 
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 # Friends of Galaxy Config File
 fog_cfg = 'https://raw.githubusercontent.com/FriendsOfGalaxy/cfg/master/' \
@@ -13,7 +13,7 @@ fog_cfg = 'https://raw.githubusercontent.com/FriendsOfGalaxy/cfg/master/' \
 
 # Plugins to ignore, as they are recieving updates separately from the
 # Friends of Galaxy update system (which is currently broken)
-ignore_plugins = ['humble', 'rockstar']
+ignore_plugins = ['humble', 'rockstar', 'steam']
 
 def fetch_fog_config_data(cfg):
     """

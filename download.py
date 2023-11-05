@@ -9,6 +9,7 @@ import tempfile
 import yaml
 import zipfile
 from io import BytesIO
+from filecmp import dircmp
 from string import Template
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
@@ -219,6 +220,68 @@ def download_plugins(data, dest):
             # Cleanup temporary directory
             tmp_dir.cleanup()
 
+def verify_plugins(data, dest):
+    """
+    Verifies existing plugins (with version check)
+    TODO: handle conflicts with old style plugin naming (no GUID)
+    """
+    for name, data in data.items():
+        version = data['version']
+        guid = data['guid']
+        url = data['url']
+        if 'archive_path' in data:
+            archive_path = data['archive_path']
+        else:
+            archive_path = None
+
+        # Destination directory
+        dest_dir = os.path.join(dest, name + '_' + guid)
+
+        if not os.path.isdir(dest_dir):
+            # Skip if destination path does not exist
+            print('NOTICE: Skipping "{}" download, does not exist locally'
+                  .format(name))
+            continue
+        else:
+            # Check the version that is installed
+            with open(os.path.join(dest_dir, 'manifest.json')) as m:
+                data = json.load(m)
+                existing_version = data['version']
+
+                # Close json file
+                m.close()
+
+                # Version doesn't match
+                if version != existing_version:
+                    print('NOTICE: Skipping "{}" download, different version (existing version: {}, manifest version: {}'
+                          .format(name, existing_version, version))
+                    continue
+                # Version matches, download
+                else:
+                    print('Verifying {} plugin'.format(name))
+
+        # Passed Pre-Download Checks
+        print('Downloading "{}" version "{}" ({}) for verification'
+              .format(name, version, guid))
+
+        # Download zip file into memory
+        req = Request(url)
+        req.add_header('user-agent', 'gog-plugin-downloader/' + __version__)
+        plugin_url = urlopen(req)
+        plugin_zip = zipfile.ZipFile(BytesIO(plugin_url.read()))
+
+        # Create temporary directory for extraction
+        tmp_dir = tempfile.TemporaryDirectory(prefix='galaxy-plugin')
+
+        # Extract zip to temporary directory
+        plugin_zip.extractall(path=tmp_dir.name)
+
+        # Compare temporary directory with plugin directory
+        plugin_cmp = dircmp(os.path.join(tmp_dir.name, archive_path) if archive_path else tmp_dir.name, dest_dir)
+        if plugin_cmp.diff_files: print('*** Differences found: {}'.format(plugin_cmp.diff_files))
+
+        # Cleanup temporary directory
+        tmp_dir.cleanup()
 
 def delete_old_plugins(data, dest):
     """
@@ -292,6 +355,9 @@ if __name__ == "__main__":
 
     parser.add_argument('-l', '--list', action='store_true',
                         help='Output list of available plugins')
+    
+    parser.add_argument('-t', '--verify', action='store_true',
+                        help='Verify existing plugins against sources')
 
     parser.add_argument('--version', action='version',
                         version='{}'.format(__version__))
@@ -315,6 +381,11 @@ if __name__ == "__main__":
 
     # Fix existing plugin directories
     fix_plugin_directories(args.dest)
+
+    # Verify plugins and exit
+    if args.verify is True:
+        verify_plugins(plugins, args.dest)
+        sys.exit(0)
 
     # Download plugins
     download_plugins(plugins, args.dest)
